@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fate & Method — Ancient Chinese Metaphysics in English</title>
+    <meta name="description" content="Your authoritative English resource for six timeless systems of Chinese wisdom — Zi Wei Dou Shu, Liu Yao, Mei Hua Yi Shu, Da Liu Ren, Xuan Kong, and Tai Yi.">
+    <meta name="keywords" content="Chinese metaphysics, Zi Wei Dou Shu, Liu Yao, I Ching, Feng Shui, Chinese astrology">
+    <link rel="canonical" href="https://fateandmethod.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --black: #0a0a0f;
+            --black-soft: #111118;
+            --gold: #c9a84c;
+            --gold-dim: rgba(201, 168, 76, 0.15);
+            --gold-border: rgba(201, 168, 76, 0.25);
+            --cream: #f0ece0;
+            --cream-dim: rgba(240, 236, 224, 0.6);
+            --text: #d4d0c8;
+            --text-muted: #8a8680;
+            --font-heading: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background: var(--black);
+            color: var(--text);
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: var(--gold); text-decoration: none; transition: opacity 0.2s; }
+        a:hover { opacity: 0.8; }
+
+        /* ─── Navigation ─── */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 20px 60px;
+            background: rgba(10, 10, 15, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--gold-border);
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            color: var(--gold);
+            text-transform: uppercase;
+        }
+
+        .nav-links { display: flex; gap: 36px; list-style: none; }
+        .nav-links a {
+            font-size: 0.78rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--cream-dim);
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--gold); opacity: 1; }
+
+        /* ─── Hero ─── */
+        .hero {
+            min-height: 100vh;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            text-align: center;
+            padding: 140px 40px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute; inset: 0;
+            background:
+                radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,168,76,0.06) 0%, transparent 70%),
+                radial-gradient(ellipse 60% 40% at 50% 100%, rgba(201,168,76,0.03) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .hero-eyebrow {
+            font-size: 0.72rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 28px;
+            opacity: 0.8;
+        }
+
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(2.8rem, 6vw, 5.5rem);
+            font-weight: 500;
+            color: var(--cream);
+            line-height: 1.1;
+            margin-bottom: 28px;
+            max-width: 900px;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .hero-sub {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            max-width: 640px;
+            margin-bottom: 52px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .hero-buttons { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 14px 36px;
+            background: var(--gold);
+            color: var(--black);
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+        .btn-primary:hover { background: #d4b56a; opacity: 1; transform: translateY(-1px); }
+
+        .btn-secondary {
+            display: inline-block;
+            padding: 14px 36px;
+            background: transparent;
+            color: var(--cream);
+            font-size: 0.82rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border: 1px solid var(--gold-border);
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+        .btn-secondary:hover { border-color: var(--gold); color: var(--gold); opacity: 1; }
+
+        /* ─── Divider ─── */
+        .section-divider {
+            width: 60px; height: 1px;
+            background: var(--gold);
+            margin: 0 auto 80px;
+            opacity: 0.5;
+        }
+
+        /* ─── Systems Grid ─── */
+        .systems-section {
+            padding: 100px 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-label {
+            text-align: center;
+            font-size: 0.72rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: var(--font-heading);
+            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+            font-weight: 500;
+            color: var(--cream);
+            margin-bottom: 16px;
+        }
+
+        .section-desc {
+            text-align: center;
+            color: var(--text-muted);
+            max-width: 540px;
+            margin: 0 auto 64px;
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+
+        .systems-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .system-card {
+            background: var(--black-soft);
+            border: 1px solid var(--gold-border);
+            padding: 40px 32px;
+            position: relative;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+
+        .system-card:hover {
+            border-color: rgba(201,168,76,0.6);
+            transform: translateY(-3px);
+        }
+
+        .card-number {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            font-weight: 300;
+            color: rgba(201,168,76,0.12);
+            position: absolute;
+            top: 20px; right: 24px;
+            line-height: 1;
+        }
+
+        .card-tag {
+            display: inline-block;
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            background: var(--gold-dim);
+            padding: 3px 10px;
+            margin-bottom: 20px;
+        }
+
+        .card-title-zh {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            color: var(--cream);
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+
+        .card-title-en {
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 16px;
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.75;
+            font-weight: 300;
+        }
+
+        /* ─── Features ─── */
+        .features-section {
+            padding: 100px 60px;
+            background: var(--black-soft);
+            border-top: 1px solid var(--gold-border);
+            border-bottom: 1px solid var(--gold-border);
+        }
+
+        .features-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+        }
+
+        .feature-item { text-align: center; }
+
+        .feature-icon {
+            font-size: 1.6rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .feature-title {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            color: var(--cream);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .feature-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        /* ─── CTA ─── */
+        .cta-section {
+            padding: 120px 40px;
+            text-align: center;
+        }
+
+        .cta-title {
+            font-family: var(--font-heading);
+            font-size: clamp(1.8rem, 3vw, 2.6rem);
+            font-weight: 500;
+            color: var(--cream);
+            margin-bottom: 48px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ─── Footer ─── */
+        footer {
+            padding: 40px 60px;
+            border-top: 1px solid var(--gold-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-copy {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        .footer-links { display: flex; gap: 28px; list-style: none; }
+        .footer-links a {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            letter-spacing: 0.05em;
+        }
+        .footer-links a:hover { color: var(--gold); opacity: 1; }
+
+        /* ─── Responsive ─── */
+        @media (max-width: 1024px) {
+            .systems-grid { grid-template-columns: repeat(2, 1fr); }
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            nav { padding: 16px 24px; flex-wrap: wrap; gap: 12px; }
+            .nav-links { gap: 20px; }
+            .hero { padding: 120px 24px 60px; }
+            .systems-section { padding: 60px 24px; }
+            .features-section { padding: 60px 24px; }
+            .systems-grid { grid-template-columns: 1fr; }
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+            footer { padding: 32px 24px; flex-direction: column; text-align: center; }
+        }
+        @media (max-width: 480px) {
+            .nav-links { display: none; }
+            .features-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Fate & Method</div>
+    <ul class="nav-links">
+        <li><a href="./ziwei.html">Zi Wei</a></li>
+        <li><a href="./liuyao.html">Liu Yao</a></li>
+        <li><a href="./meihua.html">Mei Hua</a></li>
+        <li><a href="./daliuren.html">Da Liu Ren</a></li>
+        <li><a href="./xuankong.html">Xuan Kong</a></li>
+        <li><a href="./taiyi.html">Tai Yi</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-eyebrow">Ancient Wisdom, Modern English</div>
+    <h1>Unlock the Depth of <em>Chinese Metaphysics</em></h1>
+    <p class="hero-sub">Your authoritative English resource for six timeless systems of wisdom — from the most accurate Chinese astrology to ancient divination methods, explained with precision.</p>
+    <div class="hero-buttons">
+        <a href="./ziwei.html" class="btn-primary">Start with Zi Wei</a>
+        <a href="#systems" class="btn-secondary">Explore All Systems</a>
+    </div>
+</section>
+
+<section class="systems-section" id="systems">
+    <div class="section-label">The Six Systems</div>
+    <h2 class="section-title">A Complete Map of Chinese Metaphysics</h2>
+    <p class="section-desc">Six independent lineages of knowledge, each with its own logic, scope, and application. Together they form the most comprehensive framework for understanding destiny ever devised.</p>
+
+    <div class="systems-grid">
+        <article class="system-card">
+            <span class="card-number">01</span>
+            <span class="card-tag">Most Popular</span>
+            <div class="card-title-zh">紫微斗数</div>
+            <div class="card-title-en">Zi Wei Dou Shu</div>
+            <p class="card-desc">The most sophisticated Chinese astrological system — 12 palaces, 14 main stars, and 100+ auxiliary stars paint a complete picture of destiny, personality, and life cycles.</p>
+        </article>
+
+        <article class="system-card">
+            <span class="card-number">02</span>
+            <span class="card-tag">Actionable</span>
+            <div class="card-title-zh">六爻</div>
+            <div class="card-title-en">Liu Yao</div>
+            <p class="card-desc">Born from the I Ching, Liu Yao uses three coins to generate six lines — forming an oracle that answers specific questions with uncanny timing and depth.</p>
+        </article>
+
+        <article class="system-card">
+            <span class="card-number">03</span>
+            <span class="card-tag">Spontaneous</span>
+            <div class="card-title-zh">梅花易数</div>
+            <div class="card-title-en">Mei Hua Yi Shu</div>
+            <p class="card-desc">Spontaneous divination at its finest — any object, sound, or moment becomes data. Snap readings with profound philosophical depth and immediate relevance.</p>
+        </article>
+
+        <article class="system-card">
+            <span class="card-number">04</span>
+            <span class="card-tag">Most Ancient</span>
+            <div class="card-title-zh">大六壬</div>
+            <div class="card-title-en">Da Liu Ren</div>
+            <p class="card-desc">The oldest of the three greats — a day-based celestial stem & earthly branch system used in imperial China for state affairs and critical decisions.</p>
+        </article>
+
+        <article class="system-card">
+            <span class="card-number">05</span>
+            <span class="card-tag">Strategic</span>
+            <div class="card-title-zh">奇门遁甲</div>
+            <div class="card-title-en">Xuan Kong</div>
+            <p class="card-desc">Formidable and tactical — Xuan Kong maps optimal timing and directional energy. Widely applied in Feng Shui, business strategy, and choosing the right moment.</p>
+        </article>
+
+        <article class="system-card">
+            <span class="card-number">06</span>
+            <span class="card-tag">Most Esoteric</span>
+            <div class="card-title-zh">太乙神数</div>
+            <div class="card-title-en">Tai Yi Shen Shu</div>
+            <p class="card-desc">The most esoteric of the three greats — a cyclical cosmic model predicting empire-wide events. Rarely taught, rarely found — now accessible in English.</p>
+        </article>
+    </div>
+</section>
+
+<section class="features-section">
+    <div class="features-grid">
+        <div class="feature-item">
+            <span class="feature-icon">&#9670;</span>
+            <div class="feature-title">Deep Articles</div>
+            <p class="feature-desc">Long-form, well-researched guides written for the serious student — not casual readers.</p>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">&#9673;</span>
+            <div class="feature-title">Live Tools</div>
+            <p class="feature-desc">Interactive calculators and chart generators for Zi Wei, Liu Yao, and beyond.</p>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">&#9672;</span>
+            <div class="feature-title">Global Access</div>
+            <p class="feature-desc">Everything in clear, accurate English — built for the world, not just Chinese speakers.</p>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">&#9675;</span>
+            <div class="feature-title">Updated Weekly</div>
+            <p class="feature-desc">New articles, star interpretations, and system guides added every week.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <h2 class="cta-title">Your Journey Into Ancient Wisdom Starts Here</h2>
+    <div class="hero-buttons">
+        <a href="./ziwei.html" class="btn-primary">Begin with Zi Wei</a>
+    </div>
+</section>
+
+<footer>
+    <p class="footer-copy">&copy; 2026 FateAndMethod.com &mdash; Bringing Chinese Metaphysics to the World</p>
+    <ul class="footer-links">
+        <li><a href="./ziwei.html">Zi Wei</a></li>
+        <li><a href="./liuyao.html">Liu Yao</a></li>
+        <li><a href="./meihua.html">Mei Hua</a></li>
+        <li><a href="./daliuren.html">Da Liu Ren</a></li>
+        <li><a href="./xuankong.html">Xuan Kong</a></li>
+        <li><a href="./taiyi.html">Tai Yi</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
