@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ba Zi (四柱八字) — Four Pillars of Destiny | Fate & Method</title>
+    <meta name="description" content="Complete English guide to Ba Zi (四柱八字), the world's most practiced Chinese fortune-telling system. Eight characters from your birth date and time — the most practical guide in English.">
+    <meta name="keywords" content="Ba Zi, 八字, Four Pillars of Destiny, Chinese astrology, Chinese fortune telling, birth chart Chinese, destiny reading">
+    <link rel="canonical" href="https://fateandmethod.com/bazi.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        :root{--black:#0a0a0f;--black-soft:#111118;--gold:#c9a84c;--gold-dim:rgba(201,168,76,0.15);--gold-border:rgba(201,168,76,0.25);--cream:#f0ece0;--cream-dim:rgba(240,236,224,0.6);--text:#d4d0c8;--text-muted:#8a8680;--font-heading:'Cormorant Garamond',Georgia,serif;--font-body:'Inter',-apple-system,sans-serif;--sidebar-w:240px}
+        html{scroll-behavior:smooth}
+        body{background:var(--black);color:var(--text);font-family:var(--font-body);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+        a{color:var(--gold);text-decoration:none;transition:opacity 0.2s}
+        a:hover{opacity:0.8}
+        nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 60px;background:rgba(10,10,15,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--gold-border)}
+        .logo{font-family:var(--font-heading);font-size:1.4rem;font-weight:600;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase}
+        .nav-links{display:flex;gap:28px;list-style:none;flex-wrap:wrap}
+        .nav-links a{font-size:0.75rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--cream-dim);transition:color 0.2s}
+        .nav-links a:hover,.nav-links a.active{color:var(--gold);opacity:1}
+        .page-hero{padding:160px 60px 80px;max-width:1400px;margin:0 auto}
+        .page-eyebrow{font-size:0.72rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+        .page-hero h1{font-family:var(--font-heading);font-size:clamp(2.2rem,4.5vw,3.8rem);font-weight:500;color:var(--cream);line-height:1.15;margin-bottom:20px;max-width:800px}
+        .page-hero h1 em{font-style:italic;color:var(--gold)}
+        .page-hero-sub{font-size:1rem;color:var(--text-muted);font-weight:300;max-width:580px}
+        .article-layout{display:grid;grid-template-columns:1fr var(--sidebar-w);gap:60px;max-width:1400px;margin:0 auto;padding:0 60px 100px;align-items:start}
+        .article-content{min-width:0}
+        .article-lead{font-size:1.1rem;color:var(--cream-dim);font-weight:300;margin-bottom:48px;line-height:1.85;border-left:2px solid var(--gold);padding-left:28px}
+        h2{font-family:var(--font-heading);font-size:1.75rem;font-weight:500;color:var(--cream);margin:64px 0 24px;padding-bottom:12px;border-bottom:1px solid var(--gold-border)}
+        h3{font-family:var(--font-heading);font-size:1.25rem;font-weight:500;color:var(--cream);margin:32px 0 12px}
+        p{margin-bottom:20px;color:var(--text)}
+        strong{color:var(--cream);font-weight:500}
+        .grid-10{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:28px 0}
+        .grid-12{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:28px 0}
+        .grid-item{background:var(--black-soft);border:1px solid var(--gold-border);padding:16px}
+        .grid-item h4{font-family:var(--font-heading);font-size:1rem;color:var(--gold);margin-bottom:6px;font-weight:500}
+        .grid-item p{font-size:0.8rem;color:var(--text-muted);font-weight:300;margin:0}
+        .callout{background:var(--gold-dim);border:1px solid var(--gold-border);padding:24px 28px;margin:28px 0}
+        .callout p{color:var(--cream-dim);margin:0;font-size:0.92rem}
+        .comparison-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:0.88rem}
+        .comparison-table th{text-align:left;padding:12px 16px;background:var(--black-soft);color:var(--gold);font-family:var(--font-heading);font-size:0.9rem;border-bottom:1px solid var(--gold-border)}
+        .comparison-table td{padding:10px 16px;border-bottom:1px solid rgba(201,168,76,0.08);color:var(--text)}
+        .comparison-table tr:hover td{background:rgba(201,168,76,0.04)}
+        .article-cta{margin-top:80px;padding:48px;background:var(--black-soft);border:1px solid var(--gold-border);text-align:center}
+        .article-cta h3{font-family:var(--font-heading);font-size:1.5rem;color:var(--cream);margin-bottom:12px}
+        .article-cta p{color:var(--text-muted);font-size:0.9rem;margin-bottom:24px}
+        .btn-primary{display:inline-block;padding:14px 36px;background:var(--gold);color:var(--black);font-size:0.82rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border:none;cursor:pointer;transition:all 0.25s}
+        .btn-primary:hover{background:#d4b56a;opacity:1;transform:translateY(-1px)}
+        .sidebar{position:sticky;top:100px}
+        .toc-label{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:16px}
+        .toc-list{list-style:none}
+        .toc-list li{margin-bottom:2px}
+        .toc-list a{display:block;font-size:0.82rem;color:var(--text-muted);padding:6px 12px;border-left:2px solid transparent;transition:all 0.2s}
+        .toc-list a:hover,.toc-list a.active{color:var(--gold);border-left-color:var(--gold);background:var(--gold-dim);opacity:1}
+        footer{padding:40px 60px;border-top:1px solid var(--gold-border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+        .footer-copy{font-size:0.82rem;color:var(--text-muted);font-weight:300}
+        .footer-links{display:flex;gap:28px;list-style:none}
+        .footer-links a{font-size:0.78rem;color:var(--text-muted);letter-spacing:0.05em}
+        .footer-links a:hover{color:var(--gold);opacity:1}
+        @media(max-width:1100px){.article-layout{grid-template-columns:1fr}.sidebar{position:static;display:none}}
+        @media(max-width:768px){nav{padding:16px 24px}.nav-links{gap:14px}.page-hero{padding:120px 24px 60px}.article-layout{padding:0 24px 60px}.grid-10,.grid-12{grid-template-columns:repeat(2,1fr)}footer{padding:32px 24px;flex-direction:column;text-align:center}}
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="./index.html" class="logo">Fate & Method</a>
+    <ul class="nav-links">
+        <li><a href="./ziwei.html">Zi Wei</a></li>
+        <li><a href="./liuyao.html">Liu Yao</a></li>
+        <li><a href="./meihua.html">Mei Hua</a></li>
+        <li><a href="./daliuren.html">Da Liu Ren</a></li>
+        <li><a href="./xuankong.html">Xuan Kong</a></li>
+        <li><a href="./taiyi.html">Tai Yi</a></li>
+        <li><a href="./xiaoliuren.html">Xiao Liu Ren</a></li>
+        <li><a href="./bazi.html" class="active">Ba Zi</a></li>
+    </ul>
+</nav>
+
+<header class="page-hero">
+    <div class="page-eyebrow">Chinese Fortune-Telling</div>
+    <h1>Ba Zi <em>(四柱八字)</em></h1>
+    <p class="page-hero-sub">The Four Pillars of Destiny — the world's most practiced Chinese divination system, explained in clear English.</p>
+</header>
+
+<div class="article-layout">
+    <article class="article-content">
+
+        <p class="article-lead">Ba Zi (八字), literally "Eight Characters" or more formally "Four Pillars of Destiny" (四柱命理), is the most widely practiced and widely recognized form of Chinese fortune-telling in the world. Based on your exact birth date and hour — four columns of two characters each = eight characters — Ba Zi maps your innate personality, strengths and weaknesses, optimal career direction, relationship compatibility, health tendencies, and the flow of luck cycles across your lifetime.</p>
+
+        <h2 id="what">What is Ba Zi?</h2>
+        <p>Ba Zi (八字), literally "Eight Characters" or more formally "Four Pillars of Destiny" (四柱命理), is the most widely practiced and widely recognized form of Chinese fortune-telling in the world. Based on your exact birth date and hour (year, month, day, and time pillars — four columns of two characters each = eight characters), Ba Zi maps your innate personality, strengths and weaknesses, optimal career direction, relationship compatibility, health tendencies, and the flow of luck cycles across your lifetime.</p>
+        <p>Unlike Zi Wei which maps a whole natal chart with 100+ stars across 12 palaces, Ba Zi distills destiny into a compact 8-character framework that experienced practitioners can read fluently. Where Zi Wei describes the landscape of your life in detail, Ba Zi gives you the coordinates — compact, precise, and surprisingly powerful.</p>
+        <p>Ba Zi is used by millions of Chinese families for major life decisions: naming children, choosing marriage partners, selecting business launch dates, and understanding why certain life periods feel harder or easier than others. It is both a personal mapping tool and a practical life compass.</p>
+
+        <h2 id="pillars">The Four Pillars</h2>
+        <p>Each pillar consists of a Heavenly Stem (天干, one of ten) and an Earthly Branch (地支, one of twelve). Together they form four columns:</p>
+        <div class="grid-12">
+            <div class="grid-item">
+                <h4>Year Pillar (年柱)</h4>
+                <p>Ancestral luck, early childhood, outer world before age 15</p>
+            </div>
+            <div class="grid-item">
+                <h4>Month Pillar (月柱)</h4>
+                <p>Parents, career tendency, adolescence and young adulthood</p>
+            </div>
+            <div class="grid-item">
+                <h4>Day Pillar (日柱)</h4>
+                <p>Self, core personality, marriage and partnerships</p>
+            </div>
+            <div class="grid-item">
+                <h4>Time Pillar (时柱)</h4>
+                <p>Children, late life, how you are perceived by those younger</p>
+            </div>
+        </div>
+        <p>Each pillar has a "hidden stem" (藏干) — additional energy that adds nuance. A Ba Zi chart with four visible stems and four hidden stems creates a total of 8 visible + 8 hidden = 16 characters of depth, which is why experienced Ba Zi readers can spend decades refining their practice.</p>
+
+        <h2 id="stems">The Ten Heavenly Stems</h2>
+        <p>The ten stems carry elemental and yin-yang energy:</p>
+        <div class="grid-10">
+            <div class="grid-item"><h4>Jia (甲)</h4><p>Yang Wood<br>Growth, leadership, initiative</p></div>
+            <div class="grid-item"><h4>Yi (乙)</h4><p>Yin Wood<br>Flexibility, creativity</p></div>
+            <div class="grid-item"><h4>Bing (丙)</h4><p>Yang Fire<br>Energy, fame, expression</p></div>
+            <div class="grid-item"><h4>Ding (丁)</h4><p>Yin Fire<br>Intimacy, hidden power</p></div>
+            <div class="grid-item"><h4>Wu (戊)</h4><p>Yang Earth<br>Stability, accumulation</p></div>
+            <div class="grid-item"><h4>Ji (己)</h4><p>Yin Earth<br>Grounding, nourishment</p></div>
+            <div class="grid-item"><h4>Geng (庚)</h4><p>Yang Metal<br>Sharpness, clarity</p></div>
+            <div class="grid-item"><h4>Xin (辛)</h4><p>Yin Metal<br>Refinement, precision</p></div>
+            <div class="grid-item"><h4>Ren (壬)</h4><p>Yang Water<br>Flow, wisdom, depth</p></div>
+            <div class="grid-item"><h4>Gui (癸)</h4><p>Yin Water<br>Introspection, secrets</p></div>
+        </div>
+
+        <h2 id="branches">The Twelve Earthly Branches & Animals</h2>
+        <div class="grid-12">
+            <div class="grid-item"><h4>Zi (子/鼠)</h4><p>Rat — Intelligence, adaptability, water</p></div>
+            <div class="grid-item"><h4>Chou (丑/牛)</h4><p>Ox — Diligence, stability, earth</p></div>
+            <div class="grid-item"><h4>Yin (寅/虎)</h4><p>Tiger — Courage, ambition, wood</p></div>
+            <div class="grid-item"><h4>Mao (卯/兔)</h4><p>Rabbit — Gentleness, art, wood</p></div>
+            <div class="grid-item"><h4>Chen (辰/龙)</h4><p>Dragon — Ambition, water-earth</p></div>
+            <div class="grid-item"><h4>Si (巳/蛇)</h4><p>Snake — Wisdom, strategy, fire</p></div>
+            <div class="grid-item"><h4>Wu (午/马)</h4><p>Horse — Energy, speed, fire-sun</p></div>
+            <div class="grid-item"><h4>Wei (未/羊)</h4><p>Goat — Creativity, beauty, earth</p></div>
+            <div class="grid-item"><h4>Shen (申/猴)</h4><p>Monkey — Intelligence, metal</p></div>
+            <div class="grid-item"><h4>You (酉/鸡)</h4><p>Rooster — Precision, punctuality</p></div>
+            <div class="grid-item"><h4>Xu (戌/狗)</h4><p>Dog — Loyalty, justice, earth-fire</p></div>
+            <div class="grid-item"><h4>Hai (亥/猪)</h4><p>Pig — Wisdom, sincerity, water</p></div>
+        </div>
+
+        <h2 id="daymaster">The Day Master — Your Core Archetype</h2>
+        <p>The Day Pillar's Heavenly Stem is called the Day Master (日主) — the core of your Ba Zi chart and the starting point of all analysis. Your Day Master determines your fundamental personality archetype:</p>
+        <div class="grid-10">
+            <div class="grid-item"><h4>Jia Day Master</h4><p>Natural leader, ambitious, growth-oriented, pioneering spirit</p></div>
+            <div class="grid-item"><h4>Yi Day Master</h4><p>Creative, flexible, artistic, adaptive, subtle intelligence</p></div>
+            <div class="grid-item"><h4>Bing Day Master</h4><p>Charismatic, expressive, social, warm, outward energy</p></div>
+            <div class="grid-item"><h4>Ding Day Master</h4><p>Nurturing, intimate, emotionally deep, protective</p></div>
+            <div class="grid-item"><h4>Wu Day Master</h4><p>Practical, stable, security-focused, reliable, structural</p></div>
+            <div class="grid-item"><h4>Ji Day Master</h4><p>Balanced, open, supportive, receptive, nourishing</p></div>
+            <div class="grid-item"><h4>Geng Day Master</h4><p>Determined, direct, justice-seeking, resilient, cutting</p></div>
+            <div class="grid-item"><h4>Xin Day Master</h4><p>Refined, critical, perfectionist, aesthetic, sharp</p></div>
+            <div class="grid-item"><h4>Ren Day Master</h4><p>Flowing, philosophical, freedom-loving, wise, expansive</p></div>
+            <div class="grid-item"><h4>Gui Day Master</h4><p>Intuitive, private, deeply emotional, mysterious, spiritual</p></div>
+        </div>
+
+        <h2 id="elements">The Five Elements in Balance</h2>
+        <p>Ba Zi charts are analyzed for elemental balance. Each stem and branch carries one of five elements (Wood, Fire, Earth, Metal, Water). A balanced chart indicates smooth life flow; an imbalanced chart indicates areas of challenge and opportunity for growth through the missing or weak elements.</p>
+        <p><strong>Elemental therapy</strong> — choosing activities, colors, environments, and even directions that strengthen weak elements — is a core practical application of Ba Zi. A person lacking Wood energy might benefit from more growth-oriented activities, green surroundings, and east-facing rooms. A person lacking Water might benefit from travel, fluid careers, and blue or black colors.</p>
+
+        <h2 id="luck">Luck Cycles: Da Yun (大运)</h2>
+        <p>Ba Zi maps luck cycles across life. A Major Luck Cycle (大运, Da Yun) shifts every 10 years and reshapes which aspects of your chart are most active. These cycles either support or challenge your natal chart, explaining why certain decades feel abundant while others feel like a struggle.</p>
+        <p><strong>Understanding your luck cycles</strong> is the key to knowing when to push forward aggressively and when to consolidate. Ba Zi without luck cycles is like a map without knowing your current location — you can see all destinations but not which one is reachable right now.</p>
+
+        <h2 id="western">Ba Zi vs Western Astrology</h2>
+        <p>Ba Zi and Western astrology both seek to understand personality and life timing, but their foundations differ:</p>
+        <table class="comparison-table">
+            <thead>
+                <tr><th></th><th>Ba Zi</th><th>Western Astrology</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Foundation</strong></td><td>Lunar calendar + exact birth time</td><td>Tropical zodiac + Sun position</td></tr>
+                <tr><td><strong>Core unit</strong></td><td>8 characters (4 stems + 4 branches)</td><td>Sun sign + planets in houses</td></tr>
+                <tr><td><strong>Timing</strong></td><td>Luck cycles every 10 years</td><td>Transits (daily/weekly/monthly)</td></tr>
+                <tr><td><strong>Prediction style</strong></td><td>More deterministic structure</td><td>More interpretive, flexible</td></tr>
+                <tr><td><strong>Best for</strong></td><td>Life direction, career, relationships, timing</td><td>Daily guidance, personality expression</td></tr>
+            </tbody>
+        </table>
+        <p>The most useful frame: <strong>Ba Zi tells you what you're working with</strong>; Western astrology tells you what you're expressing. Used together, they offer remarkably comprehensive coverage.</p>
+
+        <div class="article-cta">
+            <h3>Ready to Explore the Full Systems?</h3>
+            <p>Ba Zi is one of eight Chinese metaphysics systems — each with its own depth and application.</p>
+            <a href="./index.html" class="btn-primary">Explore All Systems</a>
+        </div>
+
+    </article>
+
+    <aside class="sidebar">
+        <div class="toc-label">Contents</div>
+        <ul class="toc-list">
+            <li><a href="#what">What is Ba Zi?</a></li>
+            <li><a href="#pillars">The Four Pillars</a></li>
+            <li><a href="#stems">The Ten Heavenly Stems</a></li>
+            <li><a href="#branches">Earthly Branches & Animals</a></li>
+            <li><a href="#daymaster">The Day Master</a></li>
+            <li><a href="#elements">Five Elements in Balance</a></li>
+            <li><a href="#luck">Luck Cycles (Da Yun)</a></li>
+            <li><a href="#western">Ba Zi vs Western Astrology</a></li>
+        </ul>
+    </aside>
+</div>
+
+<footer>
+    <div class="footer-copy">© 2026 FateAndMethod.com — Bringing Chinese Metaphysics to the World</div>
+    <ul class="footer-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./ziwei.html">Zi Wei</a></li>
+        <li><a href="./xiaoliuren.html">Xiao Liu Ren</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
