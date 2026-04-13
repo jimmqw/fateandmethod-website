@@ -60,7 +60,11 @@
         .related-card span{display:block;font-size:0.78rem;color:var(--text-muted);margin-top:0.3rem}
         .toc-list li a span{display:block;font-size:0.72rem;color:var(--text-muted);margin-top:1px}
         .toc-list li a span.current-step{color:var(--gold);font-style:italic}
-        footer{padding:40px 60px;border-top:1px solid var(--gold-border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+                .comments-section{padding:60px 0 20px;max-width:1400px;margin:0 auto;padding-left:60px;padding-right:60px}
+        .comments-title{font-family:var(--font-heading);font-size:1.3rem;color:var(--cream);margin-bottom:0.5rem}
+        .comments-subtitle{font-size:0.85rem;color:var(--text-muted);margin-bottom:2rem}
+        .comments-section .utterances{max-width:100%}
+footer{padding:40px 60px;border-top:1px solid var(--gold-border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
         .footer-copy{font-size:0.82rem;color:var(--text-muted);font-weight:300}
         .footer-links{display:flex;gap:28px;list-style:none}
         .footer-links a{font-size:0.78rem;color:var(--text-muted);letter-spacing:0.05em}
@@ -180,7 +184,20 @@
         <div class="related-card"><a href="./taiyi.html">Tai Yi Shen Shu <span>太乙神数 · Cosmic Cycles</span></a></div>
         <div class="related-card"><a href="./daily-wisdom.html">Daily Wisdom <span>生活妙招 · Practical Tips</span></a></div>
     </div>
-</section>
+</section>    <section class="comments-section">
+        <h3 class="comments-title">Reader Discussion</h3>
+        <p class="comments-subtitle">Share your thoughts, questions, or suggestions for this system</p>
+        <script src="https://utteranc.es/client.js"
+            repo="jimmqw/fateandmethod-website"
+            issue-term="pathname"
+            label="comment"
+            theme="github-dark"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </section>
+
+
 
 <footer>
     <p class="footer-copy">© 2026 FateAndMethod.com �?Bringing Chinese Metaphysics to the World</p>
