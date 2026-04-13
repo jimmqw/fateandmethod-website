@@ -7,74 +7,85 @@
     <meta name="description" content="Discover Zi Wei Dou Shu (紫微斗数), the most sophisticated Chinese astrological system with 12 palaces and 14 main stars. A complete guide in English.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        :root { --black: #0a0a0f; --gold: #c9a84c; --gold-light: #e0c476; --gold-dark: #a8883a; --cream: #f0ece0; --cream-dark: #d8d2c4; --gray: #6b6b6b; --gray-light: #9a9a9a; }
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background-color: var(--black); color: var(--cream); line-height: 1.7; font-weight: 300; }
-        h1, h2, h3, h4 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; line-height: 1.2; }
-        a { color: var(--gold); text-decoration: none; transition: color 0.3s ease; }
-        a:hover { color: var(--gold-light); }
-        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(10, 10, 15, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(201, 168, 76, 0.15); padding: 0 2rem; }
-        .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 70px; }
-        .logo { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 700; color: var(--gold); letter-spacing: 0.05em; }
-        .logo:hover { color: var(--gold-light); }
-        .nav-links { display: flex; gap: 1.8rem; list-style: none; flex-wrap: wrap; justify-content: flex-end; }
-        .nav-links a { color: var(--cream); font-size: 0.85rem; font-weight: 400; letter-spacing: 0.03em; padding: 0.5rem 0; position: relative; }
-        .nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background: var(--gold); transition: width 0.3s ease; }
-        .nav-links a:hover { color: var(--gold); }
-        .nav-links a:hover::after { width: 100%; }
-        .article-header { padding: 140px 2rem 60px; text-align: center; background: linear-gradient(180deg, rgba(201, 168, 76, 0.04) 0%, transparent 60%); position: relative; }
-        .article-header::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 500px; height: 500px; background: radial-gradient(circle, rgba(201, 168, 76, 0.08) 0%, transparent 70%); pointer-events: none; }
-        .eyebrow { font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; font-weight: 500; display: block; }
-        .article-header h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); color: var(--cream); margin-bottom: 0.5rem; position: relative; }
-        .article-header h1 em { font-style: italic; color: var(--gold); }
-        .article-header .subtitle { font-size: 1.3rem; color: var(--gray-light); margin-top: 0.5rem; }
-        .article-header .chinese-title { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--gold); margin-top: 0.5rem; letter-spacing: 0.1em; }
-        .article-body { max-width: 760px; margin: 0 auto; padding: 3rem 2rem 4rem; }
-        .article-body p { margin-bottom: 1.5rem; color: var(--cream-dark); font-size: 1.05rem; }
-        .article-body h2 { font-size: 1.8rem; color: var(--cream); margin: 2.5rem 0 1rem; padding-top: 1rem; border-top: 1px solid rgba(201, 168, 76, 0.1); }
-        .article-body h3 { font-size: 1.3rem; color: var(--gold); margin: 2rem 0 0.8rem; }
-        .article-body blockquote { border-left: 3px solid var(--gold); padding: 1rem 1.5rem; margin: 2rem 0; background: rgba(201, 168, 76, 0.04); border-radius: 0 6px 6px 0; }
-        .article-body blockquote p { color: var(--cream); font-style: italic; font-size: 1.1rem; margin-bottom: 0; }
-        .article-body blockquote cite { display: block; margin-top: 0.5rem; font-size: 0.85rem; color: var(--gray-light); font-style: normal; }
-        .getting-started { background: rgba(201, 168, 76, 0.05); border: 1px solid rgba(201, 168, 76, 0.15); border-radius: 8px; padding: 2rem; margin: 2.5rem 0; }
-        .getting-started h3 { color: var(--gold); margin-top: 0; font-size: 1.3rem; }
-        .getting-started p { color: var(--cream-dark); }
-        .getting-started ul { list-style: none; padding: 0; margin-top: 1rem; }
-        .getting-started li { padding: 0.4rem 0; color: var(--cream-dark); padding-left: 1.5rem; position: relative; }
-        .getting-started li::before { content: '→'; position: absolute; left: 0; color: var(--gold); }
-        .related-section { max-width: 760px; margin: 0 auto 3rem; padding: 0 2rem; }
-        .related-section h3 { font-size: 1.2rem; color: var(--cream); margin-bottom: 1rem; }
-        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
-        .related-card { background: rgba(240, 236, 224, 0.02); border: 1px solid rgba(201, 168, 76, 0.12); border-radius: 6px; padding: 1rem; transition: all 0.3s ease; }
-        .related-card:hover { border-color: rgba(201, 168, 76, 0.3); transform: translateY(-2px); }
-        .related-card a { color: var(--cream-dark); font-size: 0.95rem; }
-        .related-card a:hover { color: var(--gold); }
-        .related-card span { display: block; font-size: 0.8rem; color: var(--gray-light); margin-top: 0.2rem; }
-        .footer { text-align: center; padding: 2rem; border-top: 1px solid rgba(201, 168, 76, 0.08); color: var(--gray); font-size: 0.85rem; margin-top: 2rem; }
-        @media (max-width: 768px) { .nav-links { gap: 1rem; font-size: 0.8rem; } .article-body { padding: 2rem 1.5rem 3rem; } }
-        @media (max-width: 480px) { .nav-inner { flex-direction: column; height: auto; padding: 1rem 0; gap: 0.5rem; } .nav-links { justify-content: center; gap: 0.7rem; } }
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        :root{--black:#0a0a0f;--black-soft:#111118;--gold:#c9a84c;--gold-dim:rgba(201,168,76,0.15);--gold-border:rgba(201,168,76,0.25);--cream:#f0ece0;--cream-dim:rgba(240,236,224,0.6);--text:#d4d0c8;--text-muted:#8a8680;--font-heading:'Cormorant Garamond',Georgia,serif;--font-body:'Inter',-apple-system,sans-serif;--sidebar-w:240px}
+        html{scroll-behavior:smooth}
+        body{background:var(--black);color:var(--text);font-family:var(--font-body);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+        a{color:var(--gold);text-decoration:none;transition:opacity 0.2s}
+        a:hover{opacity:0.8}
+        nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 60px;background:rgba(10,10,15,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--gold-border)}
+        .logo{font-family:var(--font-heading);font-size:1.4rem;font-weight:600;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase}
+        .nav-links{display:flex;gap:36px;list-style:none}
+        .nav-links a{font-size:0.78rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--cream-dim);transition:color 0.2s}
+        .nav-links a:hover,.nav-links a.active{color:var(--gold);opacity:1}
+        .article-header{padding:140px 2rem 60px;text-align:center;background:linear-gradient(180deg,rgba(201,168,76,0.04) 0%,transparent 60%);position:relative}
+        .article-header::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(201,168,76,0.08) 0%,transparent 70%);pointer-events:none}
+        .eyebrow{font-size:0.8rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500;display:block}
+        .article-header h1{font-family:var(--font-heading);font-size:clamp(2.2rem,5vw,3.5rem);color:var(--cream);margin-bottom:0.5rem;position:relative}
+        .article-header h1 em{font-style:italic;color:var(--gold)}
+        .article-header .subtitle{font-size:1.3rem;color:var(--gray-light);margin-top:0.5rem}
+        .article-header .chinese-title{font-family:var(--font-heading);font-size:1.5rem;color:var(--gold);margin-top:0.5rem;letter-spacing:0.1em}
+        .article-layout{display:grid;grid-template-columns:1fr var(--sidebar-w);gap:60px;max-width:1400px;margin:0 auto;padding:0 60px 100px;align-items:start}
+        .article-content{min-width:0}
+        .article-lead{font-size:1.1rem;color:var(--cream-dim);font-weight:300;margin-bottom:48px;line-height:1.85;border-left:2px solid var(--gold);padding-left:28px}
+        h2{font-family:var(--font-heading);font-size:1.75rem;font-weight:500;color:var(--cream);margin:64px 0 24px;padding-bottom:12px;border-bottom:1px solid var(--gold-border)}
+        h3{font-family:var(--font-heading);font-size:1.25rem;font-weight:500;color:var(--cream);margin:32px 0 12px}
+        p{margin-bottom:20px;color:var(--text)}
+        strong{color:var(--cream);font-weight:500}
+        blockquote{border-left:3px solid var(--gold);padding:1rem 1.5rem;margin:28px 0;background:rgba(201,168,76,0.04);border-radius:0 6px 6px 0}
+        blockquote p{color:var(--cream);font-style:italic;font-size:1.1rem;margin-bottom:0}
+        blockquote cite{display:block;margin-top:0.5rem;font-size:0.85rem;color:var(--text-muted);font-style:normal}
+        .getting-started{background:rgba(201,168,76,0.05);border:1px solid rgba(201,168,76,0.15);border-radius:8px;padding:2rem;margin:2.5rem 0}
+        .getting-started h3{color:var(--gold);margin-top:0;font-size:1.3rem}
+        .getting-started p{color:var(--cream-dim)}
+        .getting-started ul{list-style:none;padding:0;margin-top:1rem}
+        .getting-started li{padding:0.4rem 0;color:var(--cream-dim);padding-left:1.5rem;position:relative}
+        .getting-started li::before{content:'→';position:absolute;left:0;color:var(--gold)}
+        .article-cta{margin-top:80px;padding:48px;background:var(--black-soft);border:1px solid var(--gold-border);text-align:center}
+        .article-cta h3{font-family:var(--font-heading);font-size:1.5rem;color:var(--cream);margin-bottom:12px}
+        .article-cta p{color:var(--text-muted);font-size:0.9rem;margin-bottom:24px}
+        .btn-primary{display:inline-block;padding:14px 36px;background:var(--gold);color:var(--black);font-size:0.82rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border:none;cursor:pointer;transition:all 0.25s}
+        .btn-primary:hover{background:#d4b56a;opacity:1;transform:translateY(-1px)}
+        .sidebar{position:sticky;top:100px}
+        .toc-label{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:16px}
+        .toc-list{list-style:none}
+        .toc-list li{margin-bottom:2px}
+        .toc-list a{display:block;font-size:0.82rem;color:var(--text-muted);padding:6px 12px;border-left:2px solid transparent;transition:all 0.2s}
+        .toc-list a:hover,.toc-list a.active{color:var(--gold);border-left-color:var(--gold);background:var(--gold-dim);opacity:1}
+        .related-section{max-width:760px;margin:0 auto 3rem;padding:0 2rem}
+        .related-section h3{font-size:1.2rem;color:var(--cream);margin-bottom:1rem}
+        .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+        .related-card{background:rgba(240,236,224,0.02);border:1px solid rgba(201,168,76,0.12);border-radius:6px;padding:1rem;transition:all 0.3s ease}
+        .related-card:hover{border-color:rgba(201,168,76,0.3);transform:translateY(-2px)}
+        .related-card a{color:var(--cream-dark);font-size:0.95rem}
+        .related-card a:hover{color:var(--gold)}
+        .related-card span{display:block;font-size:0.8rem;color:var(--gray-light);margin-top:0.2rem}
+        footer{padding:40px 60px;border-top:1px solid var(--gold-border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+        .footer-copy{font-size:0.82rem;color:var(--text-muted);font-weight:300}
+        .footer-links{display:flex;gap:28px;list-style:none}
+        .footer-links a{font-size:0.78rem;color:var(--text-muted);letter-spacing:0.05em}
+        .footer-links a:hover{color:var(--gold);opacity:1}
+        @media(max-width:1100px){.article-layout{grid-template-columns:1fr}.sidebar{position:static;display:none}}
+        @media(max-width:768px){nav{padding:16px 24px}.article-header{padding:120px 24px 60px}.article-layout{padding:0 24px 60px}footer{padding:32px 24px;flex-direction:column;text-align:center}}
     </style>
     <script src="https://hm.baidu.com/hm.js?7a310f3a5b54d3c8565e5669ffb815a5"></script>
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav-inner">
-            <a href="./index.html" class="logo">Fate & Method</a>
-            <ul class="nav-links">
-                <li><a href="./ziwei.html">Zi Wei</a></li>
-                <li><a href="./liuyao.html">Liu Yao</a></li>
-                <li><a href="./meihua.html">Mei Hua</a></li>
-                <li><a href="./daliuren.html">Da Liu Ren</a></li>
-                <li><a href="./xuankong.html">Xuan Kong</a></li>
-                <li><a href="./taiyi.html">Tai Yi</a></li>
-                <li><a href="./xiaoliuren.html">Xiao Liu Ren</a></li>
-                <li><a href="./bazi.html">Ba Zi</a></li>
-                <li><a href="./daily.html">Daily Wisdom</a></li>
-            </ul>
-        </div>
+    <nav>
+        <a href="./index.html" class="logo">Fate &amp; Method</a>
+        <ul class="nav-links">
+            <li><a href="./ziwei.html" class="active">Zi Wei</a></li>
+            <li><a href="./liuyao.html">Liu Yao</a></li>
+            <li><a href="./meihua.html">Mei Hua</a></li>
+            <li><a href="./daliuren.html">Da Liu Ren</a></li>
+            <li><a href="./xuankong.html">Xuan Kong</a></li>
+            <li><a href="./taiyi.html">Tai Yi</a></li>
+            <li><a href="./xiaoliuren.html">Xiao Liu Ren</a></li>
+            <li><a href="./bazi.html">Ba Zi</a></li>
+            <li><a href="./daily-wisdom.html">Daily Wisdom</a></li>
+        </ul>
     </nav>
 
     <header class="article-header">
@@ -84,75 +95,96 @@
         <p class="chinese-title">紫微斗数</p>
     </header>
 
-    <article class="article-body">
-        <p>Among the great systems of Chinese metaphysics, <strong>Zi Wei Dou Shu</strong> — the Purple Star Astrology — stands apart as the most intricate, the most poetic, and, for millions across Asia, the most revealing. While Western astrology organizes personality around sun signs, Zi Wei Dou Shu weaves an entire cosmos within each chart: twelve life palaces, fourteen major stars, more than a hundred supplementary stars, and a complex web of interactions that reads like a literary portrait of a human soul.</p>
+    <div class="article-layout">
+        <main class="article-content">
 
-        <p>This is not a system for those who want quick answers. Zi Wei Dou Shu is for those who want to understand <em>why</em> they are who they are — and what cosmic forces have been quietly shaping their path since before they were born.</p>
+            <p class="article-lead">
+                Among the great systems of Chinese metaphysics, <strong>Zi Wei Dou Shu</strong> — the Purple Star Astrology — stands apart as the most intricate, the most poetic, and, for millions across Asia, the most revealing. While Western astrology organizes personality around sun signs, Zi Wei Dou Shu weaves an entire cosmos within each chart: twelve life palaces, fourteen major stars, more than a hundred supplementary stars, and a complex web of interactions that reads like a literary portrait of a human soul.
+            </p>
 
-        <h2>What Is Zi Wei Dou Shu?</h2>
+            <h2 id="what-is-zi-wei-dou-shu">What Is Zi Wei Dou Shu?</h2>
 
-        <p>Zi Wei Dou Shu, literally "Purple Star Counting System," is a form of destiny analysis that maps an individual's命运 (mìngyùn — fate, destiny) using the positions of celestial bodies at the exact moment of birth. Unlike Western astrology, which primarily uses the sun's position, Zi Wei Dou Shu integrates multiple layers: the lunar calendar, the Earth's position relative to both the sun and moon, and a unique system of "palaces" that represent different domains of life.</p>
+            <p>Zi Wei Dou Shu, literally "Purple Star Counting System," is a form of destiny analysis that maps an individual's命运 (mìngyùn — fate, destiny) using the positions of celestial bodies at the exact moment of birth. Unlike Western astrology, which primarily uses the sun's position, Zi Wei Dou Shu integrates multiple layers: the lunar calendar, the Earth's position relative to both the sun and moon, and a unique system of "palaces" that represent different domains of life.</p>
 
-        <p>The resulting natal chart — called a <em>ming pan</em> (命盘, "destiny board") — is a twelve-sectioned circle, each section a "palace" governing a distinct life domain: personality, wealth, siblings, property, parents, spouse, children, health, fortune, travel, career, and the notorious "motivation" palace that many practitioners consider the key to understanding a person's core drive.</p>
+            <p>The resulting natal chart — called a <em>ming pan</em> (命盘, "destiny board") — is a twelve-sectioned circle, each section a "palace" governing a distinct life domain: personality, wealth, siblings, property, parents, spouse, children, health, fortune, travel, career, and the notorious "motivation" palace that many practitioners consider the key to understanding a person's core drive.</p>
 
-        <blockquote>
-            <p>"A Zi Wei chart is not a verdict — it is a conversation between stars. The same configuration that dooms one life may be the making of another, depending entirely on the wisdom with which it is met."</p>
-        </blockquote>
+            <blockquote>
+                <p>"A Zi Wei chart is not a verdict — it is a conversation between stars. The same configuration that dooms one life may be the making of another, depending entirely on the wisdom with which it is met."</p>
+            </blockquote>
 
-        <p>Within each palace sit stars — some auspicious, some ominous, some playful — interacting with one another through relationships of support, conflict, or indifference. A single palace can contain a constellation of meaning that takes years of study to fully unpack.</p>
+            <p>Within each palace sit stars — some auspicious, some ominous, some playful — interacting with one another through relationships of support, conflict, or indifference. A single palace can contain a constellation of meaning that takes years of study to fully unpack.</p>
 
-        <h2>A History Written in the Heavens</h2>
+            <h2 id="a-history-written-in-the-heavens">A History Written in the Heavens</h2>
 
-        <p>The origins of Zi Wei Dou Shu are shrouded in the kind of mystery that befits a system obsessed with cosmic destiny. The most widely accepted account traces it to the Tang Dynasty (618–907 CE), specifically to the legendary metaphysician <strong>Yuan Tiangang</strong> (袁天罡), who is said to have developed the system during his service at the imperial court. Legend holds that Yuan Tiangang could determine a person's entire life path simply from their birth data — and that he used this ability to identify the future Emperor Taizong as a child of extraordinary destiny.</p>
+            <p>The origins of Zi Wei Dou Shu are shrouded in the kind of mystery that befits a system obsessed with cosmic destiny. The most widely accepted account traces it to the Tang Dynasty (618–907 CE), specifically to the legendary metaphysician <strong>Yuan Tiangang</strong> (袁天罡), who is said to have developed the system during his service at the imperial court. Legend holds that Yuan Tiangang could determine a person's entire life path simply from their birth data — and that he used this ability to identify the future Emperor Taizong as a child of extraordinary destiny.</p>
 
-        <p>Others attribute the system's full codification to <strong>Chen Xian</strong> (陈抟), a Taoist mystic of the Five Dynasties and Song periods, who reputedly created the foundational star map while in a state of meditative trance. Whatever the precise historical origins, Zi Wei Dou Shu was refined through centuries of imperial use, with each generation of scholars adding layers of interpretation and refinement.</p>
+            <p>Others attribute the system's full codification to <strong>Chen Xian</strong> (陈抟), a Taoist mystic of the Five Dynasties and Song periods, who reputedly created the foundational star map while in a state of meditative trance. Whatever the precise historical origins, Zi Wei Dou Shu was refined through centuries of imperial use, with each generation of scholars adding layers of interpretation and refinement.</p>
 
-        <p>Unlike the more secretive of the esoteric arts, Zi Wei Dou Shu was practiced openly at the imperial court. It was considered too important — and too accurate — to be left to amateurs. Emperors consulted their Zi Wei charts before major decisions. The system was, in a very real sense, the operating system of imperial Chinese governance.</p>
+            <p>Unlike the more secretive of the esoteric arts, Zi Wei Dou Shu was practiced openly at the imperial court. It was considered too important — and too accurate — to be left to amateurs. Emperors consulted their Zi Wei charts before major decisions. The system was, in a very real sense, the operating system of imperial Chinese governance.</p>
 
-        <blockquote>
-            <p>"The three 'greats' of Chinese metaphysics — Da Liu Ren, Tai Yi, and Xuan Kong — each offered their own window into cosmic timing. But Zi Wei Dou Shu offered something they could not: a map of the individual soul."</p>
-        </blockquote>
+            <blockquote>
+                <p>"The three 'greats' of Chinese metaphysics — Da Liu Ren, Tai Yi, and Xuan Kong — each offered their own window into cosmic timing. But Zi Wei Dou Shu offered something they could not: a map of the individual soul."</p>
+            </blockquote>
 
-        <h2>How It Works: The Dance of Stars and Palaces</h2>
+            <h2 id="how-it-works-the-dance-of-stars-and-palaces">How It Works: The Dance of Stars and Palaces</h2>
 
-        <p>To cast a Zi Wei chart, you need only three pieces of information: your birth year (in the lunar calendar), your birth month, and your birth hour. From these, an experienced practitioner derives the positions of the fourteen primary stars within the twelve palaces. The most important stars include:</p>
+            <p>To cast a Zi Wei chart, you need only three pieces of information: your birth year (in the lunar calendar), your birth month, and your birth hour. From these, an experienced practitioner derives the positions of the fourteen primary stars within the twelve palaces. The most important stars include:</p>
 
-        <p><strong>Zi Wei</strong> (紫微, the North Star) — the namesake star, representing the self and the chart's central axis. <strong>Tian Ji</strong> (天机) — the Celestial Mechanism, associated with intelligence and strategy. <strong>Wu Qu</strong> (武曲, the Military Star) — will, discipline, and the ability to take action. <strong>Lian Zhen</strong> (廉贞) — passion, creativity, and a certain reckless charm. <strong>Tian Tong</strong> (天同) — optimism, enjoyment, and emotional contentment. <strong>太阳</strong> (Tai Yang, the Sun) — ambition, public image, and the drive to shine.</p>
+            <p><strong>Zi Wei</strong> (紫微, the North Star) — the namesake star, representing the self and the chart's central axis. <strong>Tian Ji</strong> (天机) — the Celestial Mechanism, associated with intelligence and strategy. <strong>Wu Qu</strong> (武曲, the Military Star) — will, discipline, and the ability to take action. <strong>Lian Zhen</strong> (廉贞) — passion, creativity, and a certain reckless charm. <strong>Tian Tong</strong> (天同) — optimism, enjoyment, and emotional contentment. <strong>太阳</strong> (Tai Yang, the Sun) — ambition, public image, and the drive to shine.</p>
 
-        <p>These stars are not fixed in their positions — they "move" through the palaces based on the birth data in a way that creates a unique pattern for every individual. This is what makes Zi Wei Dou Shu so remarkably specific: no two charts are alike, because no two moments of birth are alike.</p>
+            <p>These stars are not fixed in their positions — they "move" through the palaces based on the birth data in a way that creates a unique pattern for every individual. This is what makes Zi Wei Dou Shu so remarkably specific: no two charts are alike, because no two moments of birth are alike.</p>
 
-        <p>The magic, however, lies not in reading stars in isolation but in understanding their <em>interactions</em>. A wealth star in the wealth palace is good news — but not if it is hemmed in by a cluster of ominous stars. A brilliant career configuration can be undermined by a neglected health palace. The chart reveals not just what you have, but what you are neglecting, what dangers lurk in blind spots, and where the untapped potential quietly waits.</p>
+            <p>The magic, however, lies not in reading stars in isolation but in understanding their <em>interactions</em>. A wealth star in the wealth palace is good news — but not if it is hemmed in by a cluster of ominous stars. A brilliant career configuration can be undermined by a neglected health palace. The chart reveals not just what you have, but what you are neglecting, what dangers lurk in blind spots, and where the untapped potential quietly waits.</p>
 
-        <h2>What Zi Wei Can Tell You</h2>
+            <h2 id="what-zi-wei-can-tell-you">What Zi Wei Can Tell You</h2>
 
-        <p>Zi Wei Dou Shu excels at painting the broad strokes of a life. It reveals your personality structure — are you driven by ambition or contentment? Do you lead with the heart or the mind? Are you meant for the spotlight or the shadows? It identifies life cycles: when will wealth likely arrive? When is a marriage or relationship most probable? When should you be cautious about health?</p>
+            <p>Zi Wei Dou Shu excels at painting the broad strokes of a life. It reveals your personality structure — are you driven by ambition or contentment? Do you lead with the heart or the mind? Are you meant for the spotlight or the shadows? It identifies life cycles: when will wealth likely arrive? When is a marriage or relationship most probable? When should you be cautious about health?</p>
 
-        <p>But it is perhaps most powerful as a tool for <em>self-understanding</em>. In the hands of a skilled practitioner, a Zi Wei chart becomes a mirror — not a cold, deterministic mirror that decrees your fate, but a warm, philosophical one that reveals the patterns you may have been unconsciously acting out, and the areas where conscious effort can reshape a destiny that the stars have only sketched in pencil.</p>
+            <p>But it is perhaps most powerful as a tool for <em>self-understanding</em>. In the hands of a skilled practitioner, a Zi Wei chart becomes a mirror — not a cold, deterministic mirror that decrees your fate, but a warm, philosophical one that reveals the patterns you may have been unconsciously acting out, and the areas where conscious effort can reshape a destiny that the stars have only sketched in pencil.</p>
 
-        <blockquote>
-            <p>"Zi Wei Dou Shu does not tell you what will happen. It tells you what you are most likely to do — and in that telling, it hands you the rarest gift of all: the chance to choose differently."</p>
-        </blockquote>
+            <blockquote>
+                <p>"Zi Wei Dou Shu does not tell you what will happen. It tells you what you are most likely to do — and in that telling, it hands you the rarest gift of all: the chance to choose differently."</p>
+            </blockquote>
 
-        <h2>Why You Should Learn Zi Wei Dou Shu</h2>
+            <h2 id="why-you-should-learn-zi-wei-dou-shu">Why You Should Learn Zi Wei Dou Shu</h2>
 
-        <p>If you are drawn to Chinese metaphysics, Zi Wei Dou Shu offers a depth that few systems can match. It is a complete language for understanding human nature — one that can describe the difference between two siblings raised in the same household with the same parents, and explain why one thrives in chaos while the other crumbles. It is also endlessly fascinating: even after years of study, new patterns emerge, new insights appear, and the chart continues to reveal.</p>
+            <p>If you are drawn to Chinese metaphysics, Zi Wei Dou Shu offers a depth that few systems can match. It is a complete language for understanding human nature — one that can describe the difference between two siblings raised in the same household with the same parents, and explain why one thrives in chaos while the other crumbles. It is also endlessly fascinating: even after years of study, new patterns emerge, new insights appear, and the chart continues to reveal.</p>
 
-        <p>For those interested in personal development, Zi Wei offers something rare: a framework that honors both structure and agency. Your stars describe your tendencies — but tendencies are not sentences. The system has always understood that wisdom, environment, and effort can transform the raw material of destiny into something remarkable.</p>
+            <p>For those interested in personal development, Zi Wei offers something rare: a framework that honors both structure and agency. Your stars describe your tendencies — but tendencies are not sentences. The system has always understood that wisdom, environment, and effort can transform the raw material of destiny into something remarkable.</p>
 
-        <p>And for those who simply want to understand themselves and the people around them with greater clarity, Zi Wei Dou Shu is one of the most rewarding journeys you can undertake.</p>
+            <p>And for those who simply want to understand themselves and the people around them with greater clarity, Zi Wei Dou Shu is one of the most rewarding journeys you can undertake.</p>
 
-        <div class="getting-started">
-            <h3>Getting Started with Zi Wei Dou Shu</h3>
-            <p>Begin your journey into the Purple Star system with these foundational steps:</p>
-            <ul>
-                <li><strong>Get your natal chart cast</strong> — You'll need your lunar birth date, month, and hour. Many online calculators exist, but a professional casting by a qualified teacher is always more accurate.</li>
-                <li><strong>Study the twelve palaces</strong> — Each palace governs a life domain. Understanding them is the foundation of all Zi Wei reading.</li>
-                <li><strong>Learn the fourteen main stars</strong> — Each star carries a personality archetype. Their placement in your palaces tells the story of how those qualities manifest in your life.</li>
-                <li><strong>Read, reflect, and revisit</strong> — A Zi Wei chart reveals new layers the more you live with it. Return to your chart at different life stages and notice what speaks to you now that did not before.</li>
-                <li><strong>Find a teacher</strong> — While books and online resources are valuable, Zi Wei Dou Shu is a living tradition best learned through guided study and dialogue with experienced practitioners.</li>
+            <div class="getting-started">
+                <h3>Getting Started with Zi Wei Dou Shu</h3>
+                <p>Begin your journey into the Purple Star system with these foundational steps:</p>
+                <ul>
+                    <li><strong>Get your natal chart cast</strong> — You'll need your lunar birth date, month, and hour. Many online calculators exist, but a professional casting by a qualified teacher is always more accurate.</li>
+                    <li><strong>Study the twelve palaces</strong> — Each palace governs a life domain. Understanding them is the foundation of all Zi Wei reading.</li>
+                    <li><strong>Learn the fourteen main stars</strong> — Each star carries a personality archetype. Their placement in your palaces tells the story of how those qualities manifest in your life.</li>
+                    <li><strong>Read, reflect, and revisit</strong> — A Zi Wei chart reveals new layers the more you live with it. Return to your chart at different life stages and notice what speaks to you now that did not before.</li>
+                    <li><strong>Find a teacher</strong> — While books and online resources are valuable, Zi Wei Dou Shu is a living tradition best learned through guided study and dialogue with experienced practitioners.</li>
+                </ul>
+            </div>
+
+            <div class="article-cta">
+                <h3>Zi Wei Dou Shu Chart Analysis Available</h3>
+                <p>Professional Zi Wei chart readings by experienced practitioners. Get your personalized star palace analysis.</p>
+                <a href="./bazi.html" class="btn-primary">Explore Ba Zi</a>
+            </div>
+
+        </main>
+
+        <aside class="sidebar">
+            <div class="toc-label">In This Article</div>
+            <ul class="toc-list">
+                <li><a href="#what-is-zi-wei-dou-shu">What Is Zi Wei Dou Shu?</a></li>
+                <li><a href="#a-history-written-in-the-heavens">A History Written in the Heavens</a></li>
+                <li><a href="#how-it-works-the-dance-of-stars-and-palaces">How It Works: The Dance of Stars and Palaces</a></li>
+                <li><a href="#what-zi-wei-can-tell-you">What Zi Wei Can Tell You</a></li>
+                <li><a href="#why-you-should-learn-zi-wei-dou-shu">Why You Should Learn Zi Wei Dou Shu</a></li>
             </ul>
-        </div>
-    </article>
+        </aside>
+    </div>
 
     <section class="related-section">
         <h3>Explore Other Systems</h3>
@@ -168,8 +200,16 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <p>© 2026 FateAndMethod.com — Bringing Chinese Metaphysics to the World</p>
+    <footer>
+        <p class="footer-copy">&copy; 2026 FateAndMethod.com — Bringing Chinese Metaphysics to the World</p>
+        <ul class="footer-links">
+            <li><a href="./ziwei.html">Zi Wei</a></li>
+            <li><a href="./liuyao.html">Liu Yao</a></li>
+            <li><a href="./meihua.html">Mei Hua</a></li>
+            <li><a href="./daliuren.html">Da Liu Ren</a></li>
+            <li><a href="./xuankong.html">Xuan Kong</a></li>
+            <li><a href="./taiyi.html">Tai Yi</a></li>
+        </ul>
     </footer>
 </body>
 </html>
