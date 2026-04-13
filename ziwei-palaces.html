@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 12 Palaces of Zi Wei Dou Shu — A Complete Guide | Fate & Method</title>
+    <meta name="description" content="Master the 12 Palaces (十二宫) of Zi Wei Dou Shu: the命宫, 夫妻宫, 财帛宫, and more. Each palace governs a specific life domain in your chart.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        :root{--black:#0a0a0f;--black-soft:#111118;--gold:#c9a84c;--gold-dim:rgba(201,168,76,0.15);--gold-border:rgba(201,168,76,0.25);--cream:#f0ece0;--cream-dim:rgba(240,236,224,0.6);--text:#d4d0c8;--text-muted:#8a8680;--font-heading:'Cormorant Garamond',Georgia,serif;--font-body:'Inter',-apple-system,sans-serif;--sidebar-w:240px}
+        html{scroll-behavior:smooth}
+        body{background:var(--black);color:var(--text);font-family:var(--font-body);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+        a{color:var(--gold);text-decoration:none;transition:opacity 0.2s}
+        a:hover{opacity:0.8}
+        nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 60px;background:rgba(10,10,15,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--gold-border)}
+        .logo{font-family:var(--font-heading);font-size:1.4rem;font-weight:600;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase}
+        .nav-links{display:flex;gap:36px;list-style:none}
+        .nav-links a{font-size:0.78rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--cream-dim);transition:color 0.2s}
+        .nav-links a:hover,.nav-links a.active{color:var(--gold);opacity:1}
+        .page-hero{padding:160px 60px 80px;max-width:1400px;margin:0 auto}
+        .page-eyebrow{font-size:0.72rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+        .page-hero h1{font-family:var(--font-heading);font-size:clamp(2.2rem,4.5vw,3.8rem);font-weight:500;color:var(--cream);line-height:1.15;margin-bottom:20px;max-width:800px}
+        .page-hero h1 em{font-style:italic;color:var(--gold)}
+        .page-hero-sub{font-size:1rem;color:var(--text-muted);font-weight:300;max-width:580px}
+        .article-layout{display:grid;grid-template-columns:1fr var(--sidebar-w);gap:60px;max-width:1400px;margin:0 auto;padding:0 60px 100px;align-items:start}
+        .article-content{min-width:0}
+        .article-lead{font-size:1.1rem;color:var(--cream-dim);font-weight:300;margin-bottom:48px;line-height:1.85;border-left:2px solid var(--gold);padding-left:28px}
+        h2{font-family:var(--font-heading);font-size:1.75rem;font-weight:500;color:var(--cream);margin:48px 0 20px;padding-bottom:12px;border-bottom:1px solid var(--gold-border)}
+        h3{font-family:var(--font-heading);font-size:1.2rem;font-weight:500;color:var(--cream);margin:28px 0 10px}
+        p{margin-bottom:18px;color:var(--text)}
+        strong{color:var(--cream);font-weight:500}
+        blockquote{border-left:3px solid var(--gold);padding:1rem 1.5rem;margin:2rem 0;background:rgba(201,168,76,0.04);border-radius:0 6px 6px 0}
+        blockquote p{color:var(--cream);font-style:italic;font-size:1.05rem;margin-bottom:0}
+        .palace-card{background:var(--gold-dim);border:1px solid var(--gold-border);border-radius:8px;padding:1.5rem 2rem;margin:1.5rem 0}
+        .palace-card h3{font-family:var(--font-heading);font-size:1.2rem;color:var(--gold);margin-top:0;margin-bottom:0.5rem}
+        .palace-card .palace-info{font-size:0.75rem;color:var(--text-muted);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1rem}
+        .palace-card p{color:var(--cream-dim);margin-bottom:0}
+        .key-point{background:var(--gold-dim);border:1px solid var(--gold-border);border-radius:8px;padding:1.5rem 2rem;margin:2rem 0}
+        .key-point h3{font-family:var(--font-heading);font-size:1.1rem;color:var(--gold);margin-top:0}
+        .key-point p{color:var(--cream-dim);margin-bottom:0}
+        .article-cta{margin-top:60px;padding:40px;background:var(--black-soft);border:1px solid var(--gold-border);text-align:center}
+        .article-cta h3{font-family:var(--font-heading);font-size:1.4rem;color:var(--cream);margin-bottom:12px;margin-top:0}
+        .article-cta p{color:var(--text-muted);font-size:0.9rem;margin-bottom:20px}
+        .btn-primary{display:inline-block;padding:12px 32px;background:var(--gold);color:var(--black);font-size:0.82rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border:none;cursor:pointer;transition:all 0.25s}
+        .btn-primary:hover{background:#d4b56a;opacity:1;transform:translateY(-1px)}
+        .sidebar{position:sticky;top:100px}
+        .toc-label{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:16px}
+        .toc-list{list-style:none}
+        .toc-list li{margin-bottom:2px}
+        .toc-list a{display:block;font-size:0.82rem;color:var(--text-muted);padding:6px 12px;border-left:2px solid transparent;transition:all 0.2s}
+        .toc-list a:hover,.toc-list a.active{color:var(--gold);border-left-color:var(--gold);background:var(--gold-dim);opacity:1}
+        .related-section{padding:60px 60px;max-width:1400px;margin:0 auto}
+        .related-section h3{font-family:var(--font-heading);font-size:1.3rem;color:var(--cream);margin-bottom:1.5rem}
+        .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem}
+        .related-card a{display:block;background:var(--black-soft);border:1px solid var(--gold-border);border-radius:8px;padding:1rem;transition:all 0.25s}
+        .related-card a:hover{border-color:rgba(201,168,76,0.4);transform:translateY(-2px);opacity:1}
+        .related-card span{display:block;font-size:0.78rem;color:var(--text-muted);margin-top:0.3rem}
+        footer{padding:40px 60px;border-top:1px solid var(--gold-border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+        .footer-copy{font-size:0.82rem;color:var(--text-muted);font-weight:300}
+        .footer-links{display:flex;gap:28px;list-style:none}
+        .footer-links a{font-size:0.78rem;color:var(--text-muted);letter-spacing:0.05em}
+        .footer-links a:hover{color:var(--gold);opacity:1}
+        @media(max-width:1100px){.article-layout{grid-template-columns:1fr}.sidebar{position:static;display:none}}
+        @media(max-width:768px){nav{padding:16px 24px}.page-hero{padding:120px 24px 60px}.article-layout{padding:0 24px 60px}footer{padding:32px 24px;flex-direction:column;text-align:center}}
+    </style>
+    <script src="https://utteranc.es/client.js" repo="jimmqw/fateandmethod-website" issue-term="pathname" label="comment" theme="github-dark" crossorigin="anonymous" async></script>
+</head>
+<body>
+
+<nav>
+    <a href="./index.html" class="logo">Fate &amp; Method</a>
+    <ul class="nav-links">
+        <li><a href="./ziwei.html" class="active">Zi Wei</a></li>
+        <li><a href="./liuyao.html">Liu Yao</a></li>
+        <li><a href="./meihua.html">Mei Hua</a></li>
+        <li><a href="./daliuren.html">Da Liu Ren</a></li>
+        <li><a href="./xuankong.html">Xuan Kong</a></li>
+        <li><a href="./taiyi.html">Tai Yi</a></li>
+        <li><a href="./xiaoliuren.html">Xiao Liu Ren</a></li>
+        <li><a href="./bazi.html">Ba Zi</a></li>
+        <li><a href="./daily.html">Daily Wisdom</a></li>
+    </ul>
+</nav>
+
+<header class="page-hero">
+    <div class="page-eyebrow">Zi Wei Dou Shu &nbsp;/&nbsp; The 12 Palaces</div>
+    <h1>The 12 Palaces <em>(十二宫)</em></h1>
+    <p class="page-hero-sub">Every life domain mapped: from personality to wealth to relationships, each palace tells a specific story within your Zi Wei chart.</p>
+</header>
+
+<div class="article-layout">
+    <main class="article-content">
+
+        <p class="article-lead">
+            In Zi Wei Dou Shu, the chart is divided into twelve sections called palaces (宫). Each palace governs a specific life domain — personality, relationships, career, wealth, health, travel, subordinates, official career, property, happiness, and parents. The placement of stars within each palace, and the relationships between palaces, are what create the chart's richness. Understanding the twelve palaces is the essential framework for reading any Zi Wei Dou Shu chart.
+        </p>
+
+        <h2 id="minggong">1. 命宫 — The Life Palace (Ming Gong)</h2>
+        <div class="palace-card">
+            <h3>命宫 — Ming Gong (Life Palace)</h3>
+            <p class="palace-info">The most important palace — your core identity</p>
+            <p>The Life Palace is the most important palace in the entire chart. It represents your core personality, your essential nature, and the fundamental tendencies that define you. The stars placed in your Life Palace determine your basic character: your strengths, your weaknesses, your innate capabilities, and your primary psychological patterns. When Zi Wei practitioners say someone has "a strong chart," they usually mean the Life Palace has a particularly favorable combination of stars.</p>
+        </div>
+
+        <h2 id="xiangdi">2. 兄弟宫 — The Siblings Palace (Xiong Di Gong)</h2>
+        <div class="palace-card">
+            <h3>兄弟宫 — Siblings Palace</h3>
+            <p class="palace-info">Siblings, close friends, and financial partners</p>
+            <p>Despite its name, the Siblings Palace governs more than just siblings — it also indicates your relationship with close friends, colleagues who feel like siblings, and financial partners. The stars here describe how you relate to equals: whether you collaborate well, whether you tend to lead or be led, and whether financial partnerships are likely to be beneficial or problematic.</p>
+        </div>
+
+        <h2 id="qifu">3. 夫妻宫 — The Marriage Palace (Qi Fu Gong)</h2>
+        <div class="palace-card">
+            <h3>夫妻宫 — Marriage Palace</h3>
+            <p class="palace-info">Marriage, romantic partnerships, and intimate relationships</p>
+            <p>The Marriage Palace is one of the most studied palaces in Zi Wei Dou Shu. It describes your approach to marriage and romantic relationships — not just the type of partner you attract, but your own capacity for intimacy, your emotional needs in a partnership, and the likely nature of your marriage. A strong, well-starred Marriage Palace suggests harmonious, stable relationships. A weakly-starred or conflicted palace suggests challenges in this area.</p>
+        </div>
+
+        <h2 id="zinv">4. 子女宫 — The Children Palace (Zi Nu Gong)</h2>
+        <div class="palace-card">
+            <h3>子女宫 — Children Palace</h3>
+            <p class="palace-info">Children, creativity, and legacies</p>
+            <p>Beyond children, this palace governs creativity, artistic expression, and the legacy you leave behind. The stars here describe your relationship with children (if you have them), your creative drives, and your capacity to mentor or develop the next generation.</p>
+        </div>
+
+        <h2 id="caibo">5. 财帛宫 — The Wealth Palace (Cai Bo Gong)</h2>
+        <div class="palace-card">
+            <h3>财帛宫 — Wealth Palace</h3>
+            <p class="palace-info">Money, financial habits, and income sources</p>
+            <p>The Wealth Palace describes your relationship with money: how you earn it, how you spend it, and how you accumulate or lose it. A well-starred Wealth Palace with 、武曲 (Martial Wealth Star) or 天府 (Heavenly Wealth Star) suggests strong financial acumen. This palace also governs your attitude toward wealth — whether you are naturally generous or accumulative, whether money comes easily or through struggle.</p>
+        </div>
+
+        <h2 id="jiwu">6. 疾厄宫 — The Health Palace (Ji Wu Gong)</h2>
+        <div class="palace-card">
+            <h3>疾厄宫 — Health Palace</h3>
+            <p class="palace-info">Health, illness tendencies, and physical body</p>
+            <p>The Health Palace maps your body's vulnerabilities and tendencies. While it is not a substitute for medical diagnosis, it does indicate which organ systems are more prone to imbalance in your particular energetic makeup. In some configurations, certain stars in the Health Palace can be important early warning indicators for conditions that warrant medical attention.</p>
+        </div>
+
+        <h2 id="qianyi">7. 迁移宫 — The Migration Palace (Qian Yi Gong)</h2>
+        <div class="palace-card">
+            <h3>迁移宫 — Migration Palace</h3>
+            <p class="palace-info">Travel, external circumstances, and public image</p>
+            <p>The Migration Palace governs how you are perceived outside your home environment — by strangers, in foreign places, and in the wider world. It describes your external life circumstances and the kinds of environments where you thrive or struggle. A strong Migration Palace suggests someone who does well in travel, international contexts, and public-facing roles.</p>
+        </div>
+
+        <h2 id="pupu">8. 奴仆宫 — The Subordinates Palace (Nu Pu Gong)</h2>
+        <div class="palace-card">
+            <h3>奴仆宫 — Subordinates Palace</h3>
+            <p class="palace-info">Employees, subordinates, and loyal supporters</p>
+            <p>The Subordinates Palace describes your relationship with people who work for or under you — employees, assistants, and loyal subordinates. In modern terms, it also relates to how you manage teams and whether you tend to attract loyal or unreliable supporters. A favorable Subordinates Palace suggests good leadership and reliable teams.</p>
+        </div>
+
+        <h2 id="guanlu">9. 官禄宫 — The Career Palace (Guan Lu Gong)</h2>
+        <div class="palace-card">
+            <h3>官禄宫 — Career Palace</h3>
+            <p class="palace-info">Career, ambition, and official standing</p>
+            <p>The Career Palace governs your professional life: your career direction, your ambitions, and your official standing. The stars here indicate which professional environments suit you, whether you are suited to employment or entrepreneurship, and how your career is likely to develop over time. A strong Career Palace with leadership stars suggests someone destined for positions of authority.</p>
+        </div>
+
+        <h2 id="tianzha">10. 田宅宫 — The Property Palace (Tian Zhai Gong)</h2>
+        <div class="palace-card">
+            <h3>田宅宫 — Property Palace</h3>
+            <p class="palace-info">Property, family inheritance, and domestic environment</p>
+            <p>The Property Palace governs real estate, inherited assets, and your domestic environment. It describes your relationship with property ownership, your family home, and the inheritance you receive or leave behind. A strong Property Palace with 天府 suggests natural prosperity in real estate matters.</p>
+        </div>
+
+        <h2 id="fubao">11. 福宫 — The Happiness Palace (Fu Bao Gong)</h2>
+        <div class="palace-card">
+            <h3>福宫 — Happiness Palace</h3>
+            <p class="palace-info">Happiness, longevity, and spiritual fortune</p>
+            <p>The Happiness Palace is associated with overall life fortune, happiness, and longevity. It is one of the most favorable palaces to have well-starred, as it indicates a life where joy and good fortune are natural companions. A weak Happiness Palace suggests a life that requires more effort to find contentment.</p>
+        </div>
+
+        <h2 id="fumu">12. 父母宫 — The Parents Palace (Fu Mu Gong)</h2>
+        <div class="palace-card">
+            <h3>父母宫 — Parents Palace</h3>
+            <p class="palace-info">Parents, bosses, and authority figures</p>
+            <p>Beyond parents, this palace governs your relationship with authority figures, bosses, mentors, and the people who have power over your circumstances. It describes how authority affects your life — whether you tend to have good relationships with authority or ongoing friction with it.</p>
+        </div>
+
+        <div class="key-point">
+            <h3>The Palace Sequence and Life Cycle</h3>
+            <p>In Zi Wei Dou Shu, the twelve palaces are read in a specific temporal sequence: the 命宫 governs early life, 兄弟宫 and 夫妻宫 govern young adulthood, 财帛宫 and 官禄宫 govern middle life, and 田宅宫 and 福宫 govern later life. Understanding which palaces are emphasized at which life stages is what gives Zi Wei Dou Shu its remarkable longitudinal accuracy.</p>
+        </div>
+
+        <blockquote><p>"The palaces are not separate worlds — they are interconnected. A challenge in your Career Palace often creates opportunities in your Wealth Palace. A difficulty in your Marriage Palace can deepen the wisdom in your Happiness Palace. The chart is a living system, not a static map."</p></blockquote>
+
+        <div class="article-cta">
+            <h3>Continue: How Stars Interact in the Palaces</h3>
+            <p>The 12 palaces are the stage. The 14 stars are the actors. But what happens when the actors share the stage together? Understanding star combinations in context is the next level.</p>
+            <a href="./ziwei-combinations.html" class="btn-primary">Learn Star Combinations</a>
+        </div>
+
+    </main>
+
+    <aside class="sidebar">
+        <div class="toc-label">In This Article</div>
+        <ul class="toc-list">
+            <li><a href="#minggong">命宫 — Life Palace</a></li>
+            <li><a href="#xiangdi">兄弟宫 — Siblings</a></li>
+            <li><a href="#qifu">夫妻宫 — Marriage</a></li>
+            <li><a href="#zinv">子女宫 — Children</a></li>
+            <li><a href="#caibo">财帛宫 — Wealth</a></li>
+            <li><a href="#jiwu">疾厄宫 — Health</a></li>
+            <li><a href="#qianyi">迁移宫 — Migration</a></li>
+            <li><a href="#pupu">奴仆宫 — Subordinates</a></li>
+            <li><a href="#guanlu">官禄宫 — Career</a></li>
+            <li><a href="#tianzha">田宅宫 — Property</a></li>
+            <li><a href="#fubao">福宫 — Happiness</a></li>
+            <li><a href="#fumu">父母宫 — Parents</a></li>
+        </ul>
+    </aside>
+</div>
+
+<section class="related-section">
+    <h3>Explore Other Systems</h3>
+    <div class="related-grid">
+        <div class="related-card"><a href="./bazi.html">Ba Zi <span>四柱八字 · Birth Destiny</span></a></div>
+        <div class="related-card"><a href="./liuyao.html">Liu Yao <span>六爻 · Coin Lines</span></a></div>
+        <div class="related-card"><a href="./xiaoliuren.html">Xiao Liu Ren <span>小六壬 · Quick Answers</span></a></div>
+        <div class="related-card"><a href="./meihua.html">Mei Hua Yi Shu <span>梅花易数 · Spontaneous</span></a></div>
+        <div class="related-card"><a href="./daliuren.html">Da Liu Ren <span>大六壬 · The Three Greats</span></a></div>
+        <div class="related-card"><a href="./xuankong.html">Xuan Kong <span>奇门遁甲 · Strategic Timing</span></a></div>
+        <div class="related-card"><a href="./taiyi.html">Tai Yi Shen Shu <span>太乙神数 · Cosmic Cycles</span></a></div>
+        <div class="related-card"><a href="./daily.html">Daily Wisdom <span>生活妙招 · Practical Tips</span></a></div>
+    </div>
+</section>
+
+<footer>
+    <p class="footer-copy">© 2026 FateAndMethod.com — Bringing Chinese Metaphysics to the World</p>
+    <ul class="footer-links">
+        <li><a href="./ziwei.html">Zi Wei</a></li>
+        <li><a href="./bazi.html">Ba Zi</a></li>
+        <li><a href="./index.html">All Systems</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
