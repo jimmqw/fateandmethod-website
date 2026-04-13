@@ -435,7 +435,13 @@
                 max-width: 280px;
             }
         }
-    </style>
+    
+        .comments-section{padding:60px 0 20px;max-width:1400px;margin:0 auto;padding-left:60px;padding-right:60px}
+        .comments-title{font-family:var(--font-heading);font-size:1.3rem;color:var(--cream);margin-bottom:0.5rem}
+        .comments-subtitle{font-size:0.85rem;color:var(--text-muted);margin-bottom:2rem}
+        .comments-section .utterances{max-width:100%}
+
+</style>
     <script src="https://hm.baidu.com/hm.js?7a310f3a5b54d3c8565e5669ffb815a5"></script>
 </head>
 <body>
@@ -585,7 +591,21 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    
+    <section class="comments-section">
+        <h3 class="comments-title">Reader Discussion</h3>
+        <p class="comments-subtitle">Share your thoughts, questions, or suggestions for this system</p>
+        <script src="https://utteranc.es/client.js"
+            repo="jimmqw/fateandmethod-website"
+            issue-term="pathname"
+            label="comment"
+            theme="github-dark"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </section>
+
+<footer class="footer">
         <p>© 2026 FateAndMethod.com — Bringing Chinese Metaphysics to the World</p>
     </footer>
 </body>
