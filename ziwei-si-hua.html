@@ -45,10 +45,6 @@
         .si-hua-table{width:100%;border-collapse:collapse;margin:1.5rem 0;background:var(--black-soft);border-radius:8px;overflow:hidden}
         .si-hua-table th,.si-hua-table td{padding:1rem;text-align:center;border:1px solid var(--gold-border)}
         .si-hua-table th{background:var(--gold-dim);color:var(--gold);font-weight:600}
-        .si-hua-table .lu{color:#4ade80;font-weight:600}
-        .si-hua-table .quan{color:#f97316;font-weight:600}
-        .si-hua-table .ke{color:#60a5fa;font-weight:600}
-        .si-hua-table .ji{color:#f87171;font-weight:600}
         .stars-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;margin:1.5rem 0}
         .star-card{background:var(--black-soft);border:1px solid var(--gold-border);border-radius:6px;padding:1rem}
         .star-card h4{font-family:var(--font-heading);font-size:1rem;color:var(--gold);margin-bottom:0.3rem}
@@ -59,26 +55,46 @@
         .btn-primary{display:inline-block;padding:12px 32px;background:var(--gold);color:var(--black);font-size:0.82rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border:none;cursor:pointer;transition:all 0.25s}
         .btn-primary:hover{background:#d4b56a;opacity:1;transform:translateY(-1px)}
         .sidebar{position:sticky;top:100px}
-        .sidebar h3{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:20px}
-        .sidebar ul{list-style:none;margin:0}
-        .sidebar li{margin-bottom:12px}
-        .sidebar a{font-size:0.85rem;color:var(--cream-dim)}
-        .sidebar a:hover{color:var(--gold)}
-        @media(max-width:900px){.article-layout{grid-template-columns:1fr}.nav-links{display:none}.page-hero,.article-layout,.breadcrumb{padding-left:20px;padding-right:20px}}
+        .toc-label{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:16px}
+        .toc-list{list-style:none}
+        .toc-list li{margin-bottom:2px}
+        .toc-list a{display:block;font-size:0.82rem;color:var(--text-muted);padding:6px 12px;border-left:2px solid transparent;transition:all 0.2s}
+        .toc-list a:hover,.toc-list a.active{color:var(--gold);border-left-color:var(--gold);background:var(--gold-dim);opacity:1}
+        .related-section{padding:60px 60px;max-width:1400px;margin:0 auto}
+        .related-section h3{font-family:var(--font-heading);font-size:1.3rem;color:var(--cream);margin-bottom:1.5rem}
+        .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+        .related-card a{display:block;background:var(--black-soft);border:1px solid var(--gold-border);border-radius:8px;padding:1rem;transition:all 0.25s}
+        .related-card a:hover{border-color:rgba(201,168,76,0.4);transform:translateY(-2px);opacity:1}
+        .related-card span{display:block;font-size:0.78rem;color:var(--text-muted);margin-top:0.3rem}
+        .comments-section{padding:60px 60px 20px;max-width:1400px;margin:0 auto}
+        .comments-title{font-family:var(--font-heading);font-size:1.3rem;color:var(--cream);margin-bottom:0.5rem}
+        .comments-subtitle{font-size:0.85rem;color:var(--text-muted);margin-bottom:2rem}
+        footer{padding:40px 60px;border-top:1px solid var(--gold-border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+        .footer-copy{font-size:0.82rem;color:var(--text-muted);font-weight:300}
+        .footer-links{display:flex;gap:28px;list-style:none}
+        .footer-links a{font-size:0.78rem;color:var(--text-muted);letter-spacing:0.05em}
+        @media(max-width:1100px){.article-layout{grid-template-columns:1fr}.sidebar{position:static;display:none}}
+        @media(max-width:768px){.nav-links{display:none}.page-hero,.article-layout,.breadcrumb{padding-left:24px;padding-right:24px}}
     </style>
 </head>
 <body>
 <nav>
-<div class="logo">Fate <span>&</span> Method</div>
-<ul class="nav-links">
-<li><a href="/ziwei.html">Zi Wei</a></li>
-<li><a href="/bazi.html">Ba Zi</a></li>
-<li><a href="/liuyao.html">Liu Yao</a></li>
-</ul>
+    <a href="./index.html" class="logo">Fate <span>&amp;</span> Method</a>
+    <ul class="nav-links">
+        <li><a href="./ziwei.html" class="active">Zi Wei</a></li>
+        <li><a href="./liuyao.html">Liu Yao</a></li>
+        <li><a href="./meihua.html">Mei Hua</a></li>
+        <li><a href="./daliuren.html">Da Liu Ren</a></li>
+        <li><a href="./xuankong.html">Xuan Kong</a></li>
+        <li><a href="./taiyi.html">Tai Yi</a></li>
+        <li><a href="./xiaoliuren.html">Xiao Liu Ren</a></li>
+        <li><a href="./bazi.html">Ba Zi</a></li>
+        <li><a href="./daily-wisdom.html">Daily Wisdom</a></li>
+    </ul>
 </nav>
 <div class="breadcrumb"><a href="/">Home</a> / <a href="/ziwei.html">Zi Wei</a> / Four Transformations</div>
 <header class="page-hero">
-<div class="page-eyebrow">Zi Wei Dou Shu</div>
+<div class="page-eyebrow">Zi Wei Dou Shu &nbsp;/&nbsp; Four Transformations</div>
 <h1>The Four Transformations</h1>
 <p class="page-hero-sub">Understanding Lu (Prosperity), Quan (Power), Ke (Noble), and Ji (Obstacle) - the core of Zi Wei Dou Shu reading.</p>
 </header>
@@ -86,25 +102,25 @@
 <article class="article-content">
 <p class="article-lead">The Four Transformations (Si Hua) are the core concept in Zi Wei Dou Shu astrology. They determine how stars change their nature and influence different life areas.</p>
 
-<h2>What Are the Four Transformations?</h2>
+<h2 id="what-is-si-hua">What Are the Four Transformations?</h2>
 <p>The Four Transformations include:</p>
 <ul>
 <li><strong>Lu (化禄)</strong> - Prosperity, wealth, material enjoyment</li>
 <li><strong>Quan (化权)</strong> - Power, authority, competition</li>
 <li><strong>Ke (化科)</strong> - Noble, fame, education</li>
-<li><strong>Ji (化��)</strong> - Obstacle, restriction, attachment</li>
+<li><strong>Ji (化忌)</strong> - Obstacle, restriction, attachment</li>
 </ul>
 
-<h2>Si Hua Overview</h2>
+<h2 id="overview">Si Hua Overview</h2>
 <table class="si-hua-table">
 <tr><th>Si Hua</th><th>Name</th><th>Nature</th><th>Key Meanings</th></tr>
-<tr><td class="lu">Lu</td><td class="lu">Hua Lu</td><td>Prosperity</td><td>Wealth, income, material luck</td></tr>
-<tr><td class="quan">Quan</td><td class="quan">Hua Quan</td><td>Power</td><td>Authority, competition</td></tr>
-<tr><td class="ke">Ke</td><td class="ke">Hua Ke</td><td>Noble</td><td>Fame, education, mentors</td></tr>
-<tr><td class="ji">Ji</td><td class="ji">Hua Ji</td><td>Obstacle</td><td>Obstacles, restrictions</td></tr>
+<tr><td>Lu</td><td>Hua Lu</td><td>Prosperity</td><td>Wealth, income, material luck</td></tr>
+<tr><td>Quan</td><td>Hua Quan</td><td>Power</td><td>Authority, competition</td></tr>
+<tr><td>Ke</td><td>Hua Ke</td><td>Noble</td><td>Fame, education, mentors</td></tr>
+<tr><td>Ji</td><td>Hua Ji</td><td>Obstacle</td><td>Obstacles, restrictions</td></tr>
 </table>
 
-<h2>1. Lu (化禄) - Prosperity</h2>
+<h2 id="lu">1. Lu (化禄) - Prosperity</h2>
 <p><strong>Nature:</strong> Prosperity, wealth, income</p>
 <ul>
 <li>Represents salary, investments, business income</li>
@@ -112,7 +128,7 @@
 <li>Represents romantic luck</li>
 </ul>
 
-<h2>2. Quan (化权) - Power</h2>
+<h2 id="quan">2. Quan (化权) - Power</h2>
 <p><strong>Nature:</strong> Authority, power, competition</p>
 <ul>
 <li>Represents authority and status</li>
@@ -120,7 +136,7 @@
 <li>Represents leadership abilities</li>
 </ul>
 
-<h2>3. Ke (化科) - Noble</h2>
+<h2 id="ke">3. Ke (化科) - Noble</h2>
 <p><strong>Nature:</strong> Fame, education, mentors</p>
 <ul>
 <li>Represents fame and recognition</li>
@@ -128,7 +144,7 @@
 <li>Represents exams and education</li>
 </ul>
 
-<h2>4. Ji (化忌) - Obstacle</h2>
+<h2 id="ji">4. Ji (化忌) - Obstacle</h2>
 <p><strong>Nature:</strong> Obstacles, restrictions</p>
 <ul>
 <li>Represents challenges and setbacks</li>
@@ -136,7 +152,7 @@
 <li>Represents restrictions</li>
 </ul>
 
-<h2>The 14 Main Stars</h2>
+<h2 id="stars">The 14 Main Stars</h2>
 <div class="stars-grid">
 <div class="star-card"><h4>Zi Wei</h4><p>Emperor Star</p></div>
 <div class="star-card"><h4>Tian Ji</h4><p>Wisdom Star</p></div>
@@ -154,23 +170,75 @@
 <div class="star-card"><h4>Po Jun</h4><p>Destruction Star</p></div>
 </div>
 
-<h2>Summary</h2>
+<h2 id="summary">Summary</h2>
 <div class="key-point">
 <h3>Key Takeaway</h3>
 <p>Understanding Si Hua is essential for reading a Zi Wei Dou Shu chart. The transformation of stars reveals how energy changes in different life areas.</p>
 </div>
+
+<div class="article-cta">
+<h3>Continue Learning: The 12 Palaces</h3>
+<p>The 12 Palaces form the foundation of Zi Wei Dou Shu chart reading.</p>
+<a href="./ziwei-palaces-explained.html" class="btn-primary">Learn the 12 Palaces &rarr;</a>
+</div>
 </article>
 <aside class="sidebar">
-<h3>Zi Wei Articles</h3>
-<ul>
-<li><a href="/ziwei-intro.html">Introduction</a></li>
-<li><a href="/ziwei-stars.html">14 Main Stars</a></li>
-<li><a href="/ziwei-palaces.html">12 Palaces</a></li>
-<li><a href="/ziwei-combinations.html">Star Combinations</a></li>
-<li><a href="/ziwei-reading.html">Reading Charts</a></li>
-<li><a href="/ziwei-si-hua.html">Four Transformations</a></li>
+<div class="toc-label">In This Article</div>
+<ul class="toc-list">
+<li><a href="#what-is-si-hua">What Is Si Hua?</a></li>
+<li><a href="#overview">Si Hua Overview</a></li>
+<li><a href="#lu">Lu - Prosperity</a></li>
+<li><a href="#quan">Quan - Power</a></li>
+<li><a href="#ke">Ke - Noble</a></li>
+<li><a href="#ji">Ji - Obstacle</a></li>
+<li><a href="#summary">Summary</a></li>
+</ul>
+<div class="toc-label" style="margin-top:24px">Zi Wei Learning Path</div>
+<ul class="toc-list">
+<li><a href="./ziwei-intro.html">What Is Zi Wei Dou Shu?</a></li>
+<li><a href="./ziwei-stars.html">The 14 Main Stars</a></li>
+<li><a href="./ziwei-palaces.html">The 12 Palaces</a></li>
+<li><a href="./ziwei-combinations.html">Star Combinations</a></li>
+<li><a href="./ziwei-reading.html">How to Read a Chart</a></li>
+<li><a href="./ziwei-si-hua.html" class="active">Four Transformations <span>You are here</span></a></li>
 </ul>
 </aside>
 </main>
+
+<section class="related-section">
+<h3>Explore Other Systems</h3>
+<div class="related-grid">
+<div class="related-card"><a href="./bazi.html">Ba Zi <span>Four Pillars of Destiny</span></a></div>
+<div class="related-card"><a href="./liuyao.html">Liu Yao <span>Six Coin Lines</span></a></div>
+<div class="related-card"><a href="./xiaoliuren.html">Xiao Liu Ren <span>Quick Answers</span></a></div>
+<div class="related-card"><a href="./meihua.html">Mei Hua Yi Shu <span>Spontaneous</span></a></div>
+<div class="related-card"><a href="./daliuren.html">Da Liu Ren <span>The Three Greats</span></a></div>
+<div class="related-card"><a href="./xuankong.html">Xuan Kong <span>Strategic Timing</span></a></div>
+<div class="related-card"><a href="./taiyi.html">Tai Yi Shen Shu <span>Cosmic Cycles</span></a></div>
+<div class="related-card"><a href="./daily-wisdom.html">Daily Wisdom <span>Practical Tips</span></a></div>
+</div>
+</section>
+
+<section class="comments-section">
+<h3 class="comments-title">Reader Discussion</h3>
+<p class="comments-subtitle">Share your thoughts, questions, or suggestions for this article</p>
+<script src="https://utteranc.es/client.js"
+repo="jimmqw/fateandmethod-website"
+issue-term="pathname"
+label="comment"
+theme="github-dark"
+crossorigin="anonymous"
+async>
+</script>
+</section>
+
+<footer>
+<p class="footer-copy">&copy; 2026 FateAndMethod.com - Bringing Chinese Metaphysics to the World</p>
+<ul class="footer-links">
+<li><a href="./ziwei.html">Zi Wei</a></li>
+<li><a href="./bazi.html">Ba Zi</a></li>
+<li><a href="./index.html">All Systems</a></li>
+</ul>
+</footer>
 </body>
 </html>
