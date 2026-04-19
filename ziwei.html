@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zi Wei Dou Shu - Purple Star Astrology | Fate & Method</title>
-    <meta name="description" content="Discover Zi Wei Dou Shu (紫微斗数), the most sophisticated Chinese astrological system with 12 palaces and 14 main stars.">
+    <meta name="description" content="Zi Wei Dou Shu (紫微斗数) — China's most sophisticated astrological system. Complete guide: 12 palaces, 14 main stars, 100+ auxiliary stars, and how to read your destiny map.">
     <meta property="og:title" content="Zi Wei Dou Shu - Imperial Astrology | Fate & Method">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Zi Wei Dou Shu - Purple Star Astrology | Fate & Method">
-    <meta name="twitter:description" content="Discover Zi Wei Dou Shu (紫微斗数), the most sophisticated Chinese astrological system with 12 palaces and 14 main stars.">
-    <meta property="og:description" content="Discover Zi Wei Dou Shu (紫微斗数), the most sophisticated Chinese astrological system with 12 palaces and 14 main stars.">
+    <meta name="twitter:description" content="Zi Wei Dou Shu (紫微斗数) — China's most sophisticated astrological system. Complete guide: 12 palaces, 14 main stars, and 100+ auxiliary stars.">
+    <meta property="og:description" content="Zi Wei Dou Shu (紫微斗数) — China's most sophisticated astrological system. Complete guide: 12 palaces, 14 main stars, and 100+ auxiliary stars.">
     <meta property="og:image" content="https://fateandmethod.com/og-image.png">
     <link rel="canonical" href="https://fateandmethod.com/ziwei.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,18 +27,34 @@
         .nav-links{display:flex;gap:36px;list-style:none}
         .nav-links a{font-size:0.78rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--cream-dim);transition:color 0.2s}
         .nav-links a:hover,.nav-links a.active{color:var(--gold);opacity:1}
-        .hero{padding:140px 60px 80px;text-align:center;background:linear-gradient(180deg,rgba(201,168,76,0.06) 0%,transparent 60%)}
+        .hero{padding:140px 60px 60px;text-align:center;background:linear-gradient(180deg,rgba(201,168,76,0.06) 0%,transparent 60%)}
         .hero h1{font-family:var(--font-heading);font-size:clamp(2.5rem,5vw,4rem);color:var(--cream);margin-bottom:1rem;line-height:1.2}
         .hero h1 em{font-style:italic;color:var(--gold)}
-        .hero .subtitle{font-size:1.2rem;color:var(--text-muted);max-width:600px;margin:0 auto 2rem}
-        .hero .chinese{font-family:var(--font-heading);font-size:1.8rem;color:var(--gold);letter-spacing:0.15em;margin-top:1rem}
+        .hero .subtitle{font-size:1.15rem;color:var(--text-muted);max-width:640px;margin:0 auto 1.5rem}
+        .hero .chinese{font-family:var(--font-heading);font-size:1.8rem;color:var(--gold);letter-spacing:0.15em;margin-top:0.5rem}
         .section{padding:60px;max-width:1200px;margin:0 auto}
-        .section h2{font-family:var(--font-heading);font-size:1.6rem;color:var(--cream);margin-bottom:1.5rem;padding-bottom:0.5rem;border-bottom:1px solid var(--gold-border)}
+        .section h2{font-family:var(--font-heading);font-size:1.5rem;color:var(--cream);margin-bottom:1.5rem;padding-bottom:0.5rem;border-bottom:1px solid var(--gold-border)}
+        .article-lead{font-size:1.05rem;color:var(--cream-dim);font-weight:300;line-height:1.85;border-left:2px solid var(--gold);padding-left:24px;margin-bottom:2rem;max-width:860px}
+        .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2.5rem;max-width:860px}
+        .stat-card{background:var(--black-soft);border:1px solid var(--gold-border);border-radius:8px;padding:1.2rem 1.5rem;text-align:center}
+        .stat-card .number{font-family:var(--font-heading);font-size:2rem;color:var(--gold);font-weight:600;display:block}
+        .stat-card .label{font-size:0.8rem;color:var(--text-muted);margin-top:0.2rem}
+        .key-points{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2rem 0;max-width:860px}
+        .key-point{background:var(--black-soft);border:1px solid var(--gold-border);border-radius:8px;padding:1.2rem 1.5rem}
+        .key-point h3{font-family:var(--font-heading);font-size:1.05rem;color:var(--gold);margin-bottom:0.4rem;font-weight:500}
+        .key-point p{font-size:0.88rem;color:var(--text-muted);margin:0;line-height:1.6}
+        .comparison{background:var(--gold-dim);border:1px solid var(--gold-border);border-radius:8px;padding:1.5rem 2rem;margin:2rem 0;max-width:860px}
+        .comparison h3{font-family:var(--font-heading);font-size:1.2rem;color:var(--gold);margin-bottom:0.8rem;font-weight:500}
+        .comparison p{font-size:0.92rem;color:var(--cream-dim);margin-bottom:0.8rem}
+        .comparison p:last-child{margin-bottom:0}
         .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin-bottom:3rem}
         .card{background:var(--black-soft);border:1px solid var(--gold-border);border-radius:8px;padding:1.5rem;transition:all 0.25s}
         .card:hover{border-color:var(--gold);transform:translateY(-2px)}
-        .card h3{font-family:var(--font-heading);font-size:1.2rem;color:var(--gold);margin-bottom:0.5rem}
-        .card p{font-size:0.9rem;color:var(--text-muted);margin-bottom:0}
+        .card h3{font-family:var(--font-heading);font-size:1.15rem;color:var(--gold);margin-bottom:0.5rem;font-weight:500}
+        .card h3 a{color:var(--gold)}
+        .card h3 a:hover{opacity:0.8}
+        .card p{font-size:0.9rem;color:var(--text-muted);margin-bottom:0;line-height:1.6}
+        .card span{display:block;font-size:0.75rem;color:var(--text-muted);margin-top:0.4rem;font-style:italic}
         .cta{text-align:center;padding:60px;background:var(--black-soft);border:1px solid var(--gold-border);margin-top:40px}
         .cta h3{font-family:var(--font-heading);font-size:1.5rem;color:var(--cream);margin-bottom:1rem}
         .cta p{color:var(--text-muted);margin-bottom:1.5rem}
@@ -49,7 +65,7 @@
         .footer-links{display:flex;gap:28px;list-style:none}
         .footer-links a{font-size:0.78rem;color:var(--text-muted)}
         .footer-links a:hover{color:var(--gold)}
-        @media(max-width:768px){nav{padding:16px 24px}.hero,.section{padding:60px 24px}footer{flex-direction:column;text-align:center;gap:16px}}
+        @media(max-width:768px){nav{padding:16px 24px}.hero,.section{padding:60px 24px}.stat-grid{grid-template-columns:1fr}.key-points{grid-template-columns:1fr}.footer{flex-direction:column;text-align:center;gap:16px}}
     </style>
 </head>
 <body>
@@ -70,54 +86,128 @@
 <header class="hero">
     <h1>Zi Wei Dou Shu <em>(紫微斗数)</em></h1>
     <p class="subtitle">China's most sophisticated astrological system. 12 palaces, 14 main stars, and 100+ auxiliary stars create a complete map of your destiny.</p>
-    <p class="chinese">�?�?�?�?/p>
+    <p class="chinese">紫微斗数</p>
 </header>
+
 <section class="section">
-    <h2>Getting Started</h2>
+    <p class="article-lead">
+        Zi Wei Dou Shu — "Purple Forbidden Star Number System" — is one of the three great Chinese destiny systems (三式), alongside Da Liu Ren and Tai Yi. Where most divination systems answer a specific question, Zi Wei maps the entirety of a life: personality structure, relationship patterns, career aptitude, wealth cycles, health tendencies, and the timing of major life transitions. Its twelve palaces allow it to analyze not just <em>what</em> will happen, but <em>how</em> you will experience it — the specific texture and relationship context that other systems cannot reach.
+    </p>
+
+    <div class="stat-grid">
+        <div class="stat-card">
+            <span class="number">12</span>
+            <div class="label">Life Palaces</div>
+        </div>
+        <div class="stat-card">
+            <span class="number">14</span>
+            <div class="label">Main Stars</div>
+        </div>
+        <div class="stat-card">
+            <span class="number">100+</span>
+            <div class="label">Auxiliary Stars</div>
+        </div>
+    </div>
+
+    <div class="key-points">
+        <div class="key-point">
+            <h3>The 12 Palaces</h3>
+            <p>命宫 (Life), 兄弟, 夫妻, 子女, 财帛, 疾厄, 迁移, 奴仆, 官禄, 田宅, 福德, 父母 — each palace maps a distinct life domain with its own star occupants and energetic quality.</p>
+        </div>
+        <div class="key-point">
+            <h3>The 14 Main Stars</h3>
+            <p>紫微, 天机, 太阳, 武曲, 天同, 廉贞, 天府, 太阴, 贪狼, 巨门, 天相, 天梁, 七杀, 破军 — each an archetypal personality force that shapes how its palace expresses itself.</p>
+        </div>
+        <div class="key-point">
+            <h3>Four Transformations</h3>
+            <p>禄 (Prosperity), 权 (Power), 科 (Noble), 忌 (Obstacle) — four modes of energetic activation that mark where energy is intensified, stabilized, or challenged in your chart.</p>
+        </div>
+        <div class="key-point">
+            <h3>Why Birth Time Matters</h3>
+            <p>Zi Wei is uniquely sensitive to the birth hour. Different hours place different stars in different palaces — making the exact time more critical here than in almost any other Chinese system.</p>
+        </div>
+    </div>
+
+    <div class="comparison">
+        <h3>Zi Wei vs. Ba Zi — What's the Difference?</h3>
+        <p><strong>Ba Zi</strong> tells you <em>what</em> your tendencies are and <em>when</em> your favorable and unfavorable periods arrive. It maps the road.</p>
+        <p><strong>Zi Wei</strong> maps the person driving — their personality structure, the specific quality of their relationships, the precise way they interact with the world. It goes deeper into relational and psychological detail.</p>
+        <p>The two systems complement each other: Ba Zi for timing, Zi Wei for depth. <a href="./bazi.html">Explore Ba Zi</a> or <a href="./ziwei-intro.html">read the full comparison in our introduction</a>.</p>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Explore the Zi Wei System</h2>
     <div class="grid">
         <div class="card">
             <h3><a href="./ziwei-intro.html">What Is Zi Wei Dou Shu?</a></h3>
-            <p>Introduction to the system, its history, and how it differs from Ba Zi.</p>
+            <p>Introduction to the system, its history, core concepts, and how it differs from Ba Zi.</p>
         </div>
         <div class="card">
             <h3><a href="./ziwei-stars.html">The 14 Main Stars</a></h3>
-            <p>The foundation of every chart - 14 star archetypes.</p>
+            <p>The foundation of every chart — 14 star archetypes from Emperor Star to Battle Star.</p>
         </div>
         <div class="card">
             <h3><a href="./ziwei-palaces.html">The 12 Palaces</a></h3>
-            <p>The 12 life domains that make up your Zi Wei chart.</p>
+            <p>The 12 life domains that make up your Zi Wei chart, from Life Palace to Parents Palace.</p>
         </div>
         <div class="card">
             <h3><a href="./ziwei-combinations.html">Star Combinations</a></h3>
-            <p>How stars interact when they share the same palace.</p>
+            <p>How stars interact when they share the same palace — the core of chart interpretation.</p>
         </div>
         <div class="card">
             <h3><a href="./ziwei-reading.html">How to Read a Chart</a></h3>
-            <p>Practical step-by-step guide to reading any Zi Wei chart.</p>
+            <p>Practical step-by-step guide to reading any Zi Wei chart, from structure to synthesis.</p>
         </div>
         <div class="card">
             <h3><a href="./ziwei-si-hua.html">Four Transformations</a></h3>
-            <p>Understanding Lu (Prosperity), Quan (Power), Ke (Noble), Ji (Obstacle).</p>
+            <p>Understanding Lu (Prosperity), Quan (Power), Ke (Noble), Ji (Obstacle) — where energy activates.</p>
         </div>
         <div class="card">
             <h3><a href="./ziwei-chart-reading.html">Chart Reading Guide</a></h3>
-            <p>Advanced practical guide to chart interpretation.</p>
+            <p>Advanced practical guide to interpreting your chart's full complexity and nuance.</p>
         </div>
     </div>
 </section>
+
 <section class="section">
     <h2>Explore Other Systems</h2>
     <div class="grid">
-        <div class="card"><a href="./liuyao.html">Liu Yao<span> - Six Coin Lines</span></a></div>
-        <div class="card"><a href="./meihua.html">Mei Hua Yi Shu<span> - Spontaneous</span></a></div>
-        <div class="card"><a href="./bazi.html">Ba Zi<span> - Four Pillars</span></a></div>
-        <div class="card"><a href="./daliuren.html">Da Liu Ren<span> - The Three Greats</span></a></div>
-        <div class="card"><a href="./xuankong.html">Xuan Kong<span> - Strategic Timing</span></a></div>
-        <div class="card"><a href="./taiyi.html">Tai Yi Shen Shu<span> - Cosmic Cycles</span></a></div>
-        <div class="card"><a href="./xiaoliuren.html">Xiao Liu Ren<span> - Quick Answers</span></a></div>
-        <div class="card"><a href="./daily-wisdom.html">Daily Wisdom<span> - Practical Tips</span></a></div>
+        <div class="card">
+            <a href="./liuyao.html">Liu Yao <span> — Six Coin Lines</span></a>
+            <p>The I Ching-derived system for specific questions. Three coins, one answer.</p>
+        </div>
+        <div class="card">
+            <a href="./meihua.html">Mei Hua Yi Shu <span> — Spontaneous</span></a>
+            <p>Divination from any moment — a number, a sound, a sight. Pure intuition meets structure.</p>
+        </div>
+        <div class="card">
+            <a href="./bazi.html">Ba Zi <span> — Four Pillars</span></a>
+            <p>The world's most practiced Chinese fortune system. Eight characters, full life map.</p>
+        </div>
+        <div class="card">
+            <a href="./daliuren.html">Da Liu Ren <span> — The Three Greats</span></a>
+            <p>The oldest of the Three Greats. Day-branch-based system of extraordinary depth.</p>
+        </div>
+        <div class="card">
+            <a href="./xuankong.html">Xuan Kong <span> — Strategic Timing</span></a>
+            <p>Military-derived timing and directional system. Optimal energy mapping.</p>
+        </div>
+        <div class="card">
+            <a href="./taiyi.html">Tai Yi Shen Shu <span> — Cosmic Cycles</span></a>
+            <p>The celestial order system. Precise timing of events through cosmic cycle analysis.</p>
+        </div>
+        <div class="card">
+            <a href="./xiaoliuren.html">Xiao Liu Ren <span> — Quick Answers</span></a>
+            <p>The swiftest system — six stars, instant answers, no calculation required.</p>
+        </div>
+        <div class="card">
+            <a href="./daily-wisdom.html">Daily Wisdom <span> — Practical Tips</span></a>
+            <p>Actionable metaphysical insights for everyday decisions and situations.</p>
+        </div>
     </div>
 </section>
+
 <footer>
     <p class="footer-copy">© 2026 FateAndMethod.com - Bringing Chinese Metaphysics to the World</p>
     <ul class="footer-links">
