@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaZi Ten Gods Complete Guide | Fate & Method</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg: #0a0a0f;
+            --text: #e8e4dc;
+            --gold: #c9a84c;
+            --gold-dim: #a07f35;
+            --gold-glow: rgba(201, 168, 76, 0.15);
+            --card-bg: rgba(201, 168, 76, 0.04);
+            --border: rgba(201, 168, 76, 0.18);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            font-size: 17px;
+            line-height: 1.75;
+            font-weight: 300;
+        }
+
+        /* ─── NAV ─── */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10, 10, 15, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 0 2rem;
+        }
+
+        .nav-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+
+        .nav-logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+            letter-spacing: 0.08em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            opacity: 0.7;
+            transition: color 0.2s, opacity 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--gold); opacity: 1; }
+
+        /* ─── HERO ─── */
+        .hero {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 5rem 2rem 3.5rem;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            font-size: 0.72rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            border: 1px solid var(--border);
+            padding: 0.35rem 1.2rem;
+            border-radius: 2rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+        }
+
+        .hero .subtitle-cn {
+            font-family: 'Cinzel', serif;
+            font-size: 1.1rem;
+            color: var(--gold-dim);
+            letter-spacing: 0.15em;
+            margin-bottom: 1.8rem;
+        }
+
+        .hero p {
+            max-width: 620px;
+            margin: 0 auto;
+            font-size: 1.05rem;
+            opacity: 0.8;
+            line-height: 1.8;
+        }
+
+        .hero-divider {
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            margin: 2.5rem auto 0;
+        }
+
+        /* ─── TABLE OF CONTENTS ─── */
+        .toc {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem 2.5rem;
+        }
+
+        .toc-inner {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem 2.5rem;
+        }
+
+        .toc h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1.2rem;
+        }
+
+        .toc ol {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.4rem 2rem;
+            list-style: none;
+            counter-reset: toc;
+        }
+
+        .toc li {
+            counter-increment: toc;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            padding: 0.2rem 0;
+            border-bottom: 1px solid rgba(201, 168, 76, 0.07);
+        }
+
+        .toc li::before {
+            content: counter(toc, decimal-leading-zero) ".";
+            color: var(--gold-dim);
+            margin-right: 0.5rem;
+            font-size: 0.78rem;
+        }
+
+        .toc a { color: var(--text); text-decoration: none; transition: color 0.2s; }
+        .toc a:hover { color: var(--gold); }
+
+        /* ─── ARTICLE ─── */
+        article {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem 4rem;
+        }
+
+        section {
+            margin-bottom: 3.5rem;
+        }
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--gold);
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text);
+            margin: 1.8rem 0 0.6rem;
+            opacity: 0.95;
+        }
+
+        p { margin-bottom: 1.1rem; }
+
+        .intro-text {
+            font-size: 1.08rem;
+            opacity: 0.85;
+            border-left: 3px solid var(--gold);
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* ─── GODS GRID ─── */
+        .gods-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            margin: 1.5rem 0;
+        }
+
+        .god-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.4rem 1.5rem;
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
+
+        .god-card:hover {
+            border-color: var(--gold);
+            box-shadow: 0 0 20px var(--gold-glow);
+        }
+
+        .god-card.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .god-card .god-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 0.15rem;
+        }
+
+        .god-card .god-name-zh {
+            font-size: 0.78rem;
+            color: var(--gold-dim);
+            letter-spacing: 0.1em;
+            margin-bottom: 0.6rem;
+        }
+
+        .god-card .god-desc {
+            font-size: 0.88rem;
+            line-height: 1.7;
+            opacity: 0.8;
+        }
+
+        .god-card .god-nature {
+            margin-top: 0.6rem;
+            font-size: 0.8rem;
+            color: var(--gold-dim);
+            font-style: italic;
+        }
+
+        /* ─── YIN YANG ─── */
+        .yy-section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem 2.2rem;
+            margin: 1.5rem 0;
+        }
+
+        .yy-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1.2rem;
+        }
+
+        .yy-block h4 {
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            color: var(--gold);
+            margin-bottom: 0.6rem;
+            letter-spacing: 0.05em;
+        }
+
+        .yy-block p {
+            font-size: 0.88rem;
+            line-height: 1.7;
+            opacity: 0.8;
+            margin-bottom: 0;
+        }
+
+        /* ─── CHART READING ─── */
+        .chart-steps {
+            counter-reset: steps;
+            list-style: none;
+            margin: 1.2rem 0;
+        }
+
+        .chart-steps li {
+            display: flex;
+            gap: 1.2rem;
+            margin-bottom: 1.2rem;
+            align-items: flex-start;
+        }
+
+        .chart-steps li::before {
+            counter-increment: steps;
+            content: counter(steps);
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--gold);
+            color: var(--bg);
+            font-family: 'Cinzel', serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.15rem;
+        }
+
+        .chart-steps li div { font-size: 0.93rem; opacity: 0.85; }
+        .chart-steps li strong { color: var(--text); opacity: 1; }
+
+        /* ─── EXAMPLE ─── */
+        .example-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem 2.2rem;
+            margin: 1.5rem 0;
+        }
+
+        .chart-visual {
+            display: flex;
+            gap: 0.4rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .pillar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 100px;
+        }
+
+        .pillar-label {
+            font-family: 'Cinzel', serif;
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            color: var(--gold-dim);
+            text-transform: uppercase;
+            margin-bottom: 0.4rem;
+        }
+
+        .stem-box {
+            background: rgba(201, 168, 76, 0.1);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 0.4rem 0.8rem;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 0.25rem;
+        }
+
+        .stem-box .zh { font-size: 1.1rem; color: var(--gold); }
+        .stem-box .en { font-size: 0.7rem; color: var(--text); opacity: 0.6; }
+
+        .branch-box {
+            background: rgba(201, 168, 76, 0.05);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 0.3rem 0.8rem;
+            text-align: center;
+            width: 100%;
+            font-size: 0.85rem;
+        }
+
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+            margin-top: 1.2rem;
+        }
+
+        .analysis-item {
+            background: rgba(10, 10, 15, 0.4);
+            border: 1px solid rgba(201, 168, 76, 0.1);
+            border-radius: 6px;
+            padding: 0.9rem 1rem;
+        }
+
+        .analysis-item .label {
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--gold-dim);
+            margin-bottom: 0.3rem;
+        }
+
+        .analysis-item .value {
+            font-size: 0.9rem;
+            line-height: 1.55;
+        }
+
+        /* ─── CONCLUSION ─── */
+        .conclusion-box {
+            background: linear-gradient(135deg, rgba(201, 168, 76, 0.07) 0%, rgba(201, 168, 76, 0.02) 100%);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2.2rem 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .conclusion-box p {
+            font-size: 0.97rem;
+            opacity: 0.85;
+            margin-bottom: 0.8rem;
+        }
+
+        /* ─── FOOTER ─── */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+
+        .footer-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 0.6rem;
+            letter-spacing: 0.08em;
+        }
+
+        footer p {
+            font-size: 0.78rem;
+            opacity: 0.4;
+            margin-bottom: 0.3rem;
+        }
+
+        footer a {
+            color: var(--gold-dim);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover { color: var(--gold); }
+
+        @media (max-width: 640px) {
+            .gods-grid { grid-template-columns: 1fr; }
+            .yy-row { grid-template-columns: 1fr; }
+            .analysis-grid { grid-template-columns: 1fr; }
+            .toc ol { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="nav-inner">
+        <a href="/" class="nav-logo">FATE & METHOD</a>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/bazi">BaZi</a></li>
+            <li><a href="/zi-wei">Zi Wei</a></li>
+            <li><a href="/articles">Articles</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+    <div class="hero-badge">Complete Guide</div>
+    <h1>BaZi Ten Gods</h1>
+    <div class="subtitle-cn">十神详解</div>
+    <p>The Ten Gods are the foundational language of BaZi chart interpretation. Master them, and you unlock the story hidden in every Four Pillars chart.</p>
+    <div class="hero-divider"></div>
+</header>
+
+<!-- TOC -->
+<div class="toc">
+    <div class="toc-inner">
+        <h2>Contents</h2>
+        <ol>
+            <li><a href="#what">What Are the Ten Gods?</a></li>
+            <li><a href="#yin-yang">Yin and Yang Explained</a></li>
+            <li><a href="#zheng">The Five Pairs: Zheng</a></li>
+            <li><a href="#pian">The Five Pairs: Pian</a></li>
+            <li><a href="#reading">How to Read Them in a Chart</a></li>
+            <li><a href="#example">Practical Example</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ol>
+    </div>
+</div>
+
+<!-- ARTICLE -->
+<article>
+
+    <!-- WHAT ARE THE TEN GODS -->
+    <section id="what">
+        <h2>01 · What Are the Ten Gods?</h2>
+        <p class="intro-text">In BaZi (八字, "Eight Characters"), every stem and branch in your chart is classified by its interaction with other elements. These interaction types are called the Ten Gods (十神) — ten archetypal forces that describe the nature of relationships between the five elements.</p>
+
+        <p>The Ten Gods arise from the Day Master — your chart's core element, determined by your birth date and time. Each of the ten heavenly stems interacts with the Day Master through one of these ten relationship types. Rather than good or bad, each carries a distinct energy: nurturing, challenging, supportive, draining, or balancing.</p>
+
+        <p>Think of the Ten Gods as a vocabulary. "Officer" describes a force of authority and discipline. "Wealth" describes a force of material resources and欲望. "Resource" describes a force of knowledge and protection. Each one can manifest positively or negatively depending on its strength, balance, and context within the chart.</p>
+
+        <p>The ten gods are organized into five complementary pairs — one for each element combination — and each pair contains a <strong>Zheng</strong> (正, "correct" or "primary") version and a <strong>Pian</strong> (偏, "partial" or "branch") version. Together, they form a complete system for reading the relational dynamics within any BaZi chart.</p>
+    </section>
+
+    <!-- YIN YANG -->
+    <section id="yin-yang">
+        <h2>02 · Yin and Yang: Zheng vs. Pian</h2>
+        <p>The core distinction between the two members of each pair is the Yin-Yang attribute of the element doing the interacting. This matters because Yin and Yang versions of the same element feel different in practice.</p>
+
+        <div class="yy-section">
+            <p><strong>Zheng</strong> (正) means "correct" or "primary." It refers to the direct, matching relationship — the standard interaction between two elements of the same polarity. Zheng relationships tend to be structured, conventional, and socially recognized. A Zheng spouse, for instance, represents a formal marriage partner.</p>
+
+            <div class="yy-row">
+                <div class="yy-block">
+                    <h4>Yin Elements</h4>
+                    <p>In the BaZi system, Yin versions of each element carry a more subtle, internal, receptive quality. Yin earth is stable and conserving; Yin metal is refined and meticulous; Yin water is still and deeply introspective; Yin wood is flexible and artistic; Yin fire is warm but contained. When a Yin element interacts with the Day Master, it produces the Pian (偏) version of the god.</p>
+                </div>
+                <div class="yy-block">
+                    <h4>Yang Elements</h4>
+                    <p>Yang versions are active, external, and assertive. Yang fire burns bright and outward; Yang wood grows upward aggressively; Yang earth is expansive and solid; Yang metal is sharp and cutting; Yang water flows dynamically. When a Yang element interacts with the Day Master, it produces the Zheng (正) version of the god.</p>
+                </div>
+            </div>
+        </div>
+
+        <p>However, the Zheng/Pian distinction isn't just about Yin vs. Yang of the interacting element. It's also about the relational mode. In some pairs, the interaction involves direct generation (相生), while in others it involves indirect or partial interaction. Each of the five pairs occupies a different position in the interaction cycle, which is why they carry such distinct flavors.</p>
+    </section>
+
+    <!-- THE FIVE PAIRS -->
+    <section id="zheng">
+        <h2>03 · The Five Pairs: Zheng (Primary)</h2>
+
+        <div class="gods-grid">
+            <div class="god-card">
+                <div class="god-name">Zheng Yin — Resource</div>
+                <div class="god-name-zh">正印 · 印</div>
+                <div class="god-desc">Generated by the element that creates your Day Master. If you are a Wood day master, Water is your Zheng Yin. It is the force of protection, education, tradition, and inner wisdom. Zheng Yin represents a motherly, unconditional support — study, credentials, mentors, and legal documentation. It suppresses direct conflict and brings calm stability.</div>
+                <div class="god-nature">Supportive, protective, scholarly, conventional</div>
+            </div>
+
+            <div class="god-card">
+                <div class="god-name">Zheng Guan — Officer</div>
+                <div class="god-name-zh">正官 · 官</div>
+                <div class="god-desc">The element that your Day Master generates (produces). If you are a Wood day master, Metal is your Zheng Officer. It represents authority, law, regulations, and social order. Zheng Officer is a gentle but firm push toward responsibility and reputation. It governs your relationship with bosses, government, and structured institutions. In a balanced chart it grants leadership; in excess it creates fear and pressure.</div>
+                <div class="god-nature">Authoritative, disciplined, prestigious, cautious</div>
+            </div>
+
+            <div class="god-card">
+                <div class="god-name">Zheng Cai — Wealth</div>
+                <div class="god-name-zh">正财 · 财</div>
+                <div class="god-desc">The element that your Day Master overcomes (controls). If you are a Wood day master, Earth is your Zheng Cai. It represents tangible wealth — cash, property, salary, material assets earned through direct effort. Zheng Cai is a hard-earned, conventional income. It is steady, measurable, and tied to discipline and routine. Excess Zheng Cai can make a person overly materialistic or work-obsessed.</div>
+                <div class="god-nature">Practical, material, diligent, possessive</div>
+            </div>
+
+            <div class="god-card">
+                <div class="god-name">Zheng Shi — Food</div>
+                <div class="god-name-zh">正食 · 食</div>
+                <div class="god-desc">The element that your Day Master generates and which then generates something else in a flowing cycle. This is the most creative and expressive god. It represents talent, speech, joy, artistry, and the ability to communicate. Zheng Shi also governs children (especially daughters) and the pleasures of life. A strong Zheng Shi gives eloquence and innovation; an imbalanced one can lead to recklessness.</div>
+                <div class="god-nature">Creative, expressive, joyful, articulate</div>
+            </div>
+
+            <div class="god-card full-width">
+                <div class="god-name">Zheng Jie — Peer (Rob)</div>
+                <div class="god-name-zh">正劫 · 劫</div>
+                <div class="god-desc">The same element as your Day Master but of opposite polarity. If your Day Master is Yang Wood (Jia), then Yin Wood (Yi) is your Zheng Jie. It represents peers, siblings, and companions — people who share your space and resources. Zheng Jie has a competitive quality: it drains your resources in the same way another person of your kind would. It can represent romantic rivals, business partners, or community. The key is whether the relationship is cooperative or draining.</div>
+                <div class="god-nature">Competitive, social, communal, draining</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pian">
+        <h2>04 · The Five Pairs: Pian (Partial)</h2>
+
+        <div class="gods-grid">
+            <div class="god-card">
+                <div class="god-name">Pian Yin — Shadow Resource</div>
+                <div class="god-name-zh">偏印 · 枭</div>
+                <div class="god-desc">The Yin version of the element that creates your Day Master. Pian Yin is the same elemental generation as Zheng Yin but filtered through the Yin mode. This makes it less warm and more intellectual, even cold. It represents unorthodox knowledge, unconventional education, intuition, and spiritual insight. Pian Yin is often called "Owl" (枭) because it tends to "eat" its counterpart, Zheng Shi. It can bring depth and originality, but also obsession and isolation.</div>
+                <div class="god-nature">Intuitive, unconventional, spiritual, possessive</div>
+            </div>
+
+            <div class="god-card">
+                <div class="god-name">Pian Guan — Seven Killing Officer</div>
+                <div class="god-name-zh">偏官 · 七杀</div>
+                <div class="god-desc">The Yin version of the element your Day Master generates. Known as the Seven Killing Sha (七杀), this is the most intense and challenging of all Ten Gods. Pian Guan is direct pressure, crisis, and competition — often arriving abruptly. In small doses it drives ambition and sharpens focus. In excess it creates fear, conflict, and instability. It is the force of sudden change, powerful enemies, and transformative challenge.</div>
+                <div class="god-nature">Intense, challenging, transformative, aggressive</div>
+            </div>
+
+            <div class="god-card">
+                <div class="god-name">Pian Cai — Partial Wealth</div>
+                <div class="god-name-zh">偏财 · 财</div>
+                <div class="god-desc">The Yin version of the element your Day Master controls. Pian Cai is wealth through speculation, investment, business, or windfall — money that flows through channels less tied to fixed salary. It is associated with entrepreneurship, the stock market, gambling, and high-risk opportunity. Pian Cai is also the god of romantic relationships (for men), representing desire, attraction, and passion. It is dynamic, unpredictable, and externally focused.</div>
+                <div class="god-nature">Opportunistic, speculative, passionate, restless</div>
+            </div>
+
+            <div class="god-card">
+                <div class="god-name">Pian Shang — Injuring Officer</div>
+                <div class="god-name-zh">偏伤 · 伤官</div>
+                <div class="god-desc">The Yin counterpart to Zheng Shi. Pian Shang (sometimes called Shang Guan, "Hurting Officer") is an intensely creative force that tends to rebel against authority. Where Zheng Shi expresses through established channels, Pian Shang breaks them. It gives brilliance, unconventional genius, and sharp intellect — but also sarcasm, defiance, and a tendency to wound. Pian Shang in balance creates artists and revolutionaries; in excess it destroys careers and relationships.</div>
+                <div class="god-nature">Rebellious, brilliant, provocative, subversive</div>
+            </div>
+
+            <div class="god-card full-width">
+                <div class="god-name">Bi — Parallel (Same)</div>
+                <div class="god-name-zh">比肩 · 比</div>
+                <div class="god-desc">The Yang counterpart to your Day Master — the same element and same polarity. Where Zheng Jie is your Yin peer, Bi is your Yang peer. Bi represents friends, colleagues, and partners who are on your wavelength — people who think and act similarly to you. Bi provides solidarity and confidence in group settings. It is the energy of the team, the alliance, and the equals. Too much Bi, however, and you become reliant on others' validation, or locked in stubborn rivalry.</div>
+                <div class="god-nature">Solidaristic, confident, cooperative, stubborn</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- READING THE CHART -->
+    <section id="reading">
+        <h2>05 · How to Read Ten Gods in a Chart</h2>
+        <p>Reading the Ten Gods begins with identifying your Day Master and then classifying every other stem and branch in relation to it. Here is a step-by-step process:</p>
+
+        <ol class="chart-steps">
+            <li>
+                <div><strong>Find the Day Master</strong> — Look at the Year pillar's heavenly stem. The ten stems are: Jia (甲, Yang Wood), Yi (乙, Yin Wood), Bing (丙, Yang Fire), Ding (丁, Yin Fire), Wu (戊, Yang Earth), Ji (己, Yin Earth), Geng (庚, Yang Metal), Xin (辛, Yin Metal), Ren (壬, Yang Water), Gui (癸, Yin Water).</div>
+            </li>
+            <li>
+                <div><strong>Identify the five element roles</strong> — For your Day Master, determine which element it generates (Officer), which generates it (Resource), which it controls (Wealth), which controls it (Food), and which is its same-element peer (Bi/Jie). Each of these five becomes a "Zheng" version.</div>
+            </li>
+            <li>
+                <div><strong>Apply Yin/Yang polarity</strong> — For each relationship, check whether the interacting element is Yin or Yang. If it matches the Yin/Yang polarity of the standard interaction cycle, you get the Zheng version; if it's the opposite polarity, you get the Pian version.</div>
+            </li>
+            <li>
+                <div><strong>Count appearances</strong> — Count how many times each Ten God appears across the four pillars. The more a god appears, the more dominant that energy is in your life. A chart with three Pian Guan (Seven Killing) is a chart shaped by challenge and crisis.</div>
+            </li>
+            <li>
+                <div><strong>Assess balance</strong> — Evaluate whether the chart has too much of one god or too little of another. A chart with no Officer (官) at all will struggle with authority and structure. A chart with no Wealth (财) may have a detached relationship with material resources.</div>
+            </li>
+            <li>
+                <div><strong>Consider pillar strength</strong> — A god appearing in the Day pillar (closest to the self) has more direct personal influence than one appearing in the Year pillar. The Month pillar often shows the most active, current-life dynamics.</div>
+            </li>
+        </ol>
+    </section>
+
+    <!-- PRACTICAL EXAMPLE -->
+    <section id="example">
+        <h2>06 · Practical Example</h2>
+
+        <div class="example-box">
+            <p>Consider a chart with <strong>Bing Ding</strong> (丙丁, Yang Fire / Yin Fire) as the Day Master. This person is Fire — passionate, active, expressive, and outward-moving.</p>
+
+            <div class="chart-visual">
+                <div class="pillar">
+                    <div class="pillar-label">Year</div>
+                    <div class="stem-box"><div class="zh">壬</div><div class="en">Yang Water</div></div>
+                    <div class="branch-box">子 Water Rat</div>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-label">Month</div>
+                    <div class="stem-box"><div class="zh">己</div><div class="en">Yin Earth</div></div>
+                    <div class="branch-box">丑 Earth Ox</div>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-label">Day</div>
+                    <div class="stem-box" style="border: 1px solid var(--gold); background: rgba(201,168,76,0.15);"><div class="zh">丁</div><div class="en">Yin Fire ★</div></div>
+                    <div class="branch-box">酉 Metal Rooster</div>
+                </div>
+                <div class="pillar">
+                    <div class="pillar-label">Hour</div>
+                    <div class="stem-box"><div class="zh">庚</div><div class="en">Yang Metal</div></div>
+                    <div class="branch-box">申 Metal Monkey</div>
+                </div>
+            </div>
+
+            <div class="analysis-grid">
+                <div class="analysis-item">
+                    <div class="label">Day Master</div>
+                    <div class="value">丁 (Yin Fire) — emotional, artistic, inward-focused Fire</div>
+                </div>
+                <div class="analysis-item">
+                    <div class="label">Resource (印)</div>
+                    <div class="value">甲 (Yang Wood) = Zheng Yin — protects and nourishes. Absent in this chart. May seek external structure and study.</div>
+                </div>
+                <div class="analysis-item">
+                    <div class="label">Officer (官)</div>
+                    <div class="value">癸 (Yin Water) in Year = Zheng Officer — gentle authority, law, career regulation. Present in the Year pillar.</div>
+                </div>
+                <div class="analysis-item">
+                    <div class="label">Wealth (财)</div>
+                    <div class="value">酉 (Yin Metal) in Day Branch + Geng (Yang Metal) in Hour — strong Wealth energy. Material pursuits are prominent.</div>
+                </div>
+                <div class="analysis-item">
+                    <div class="label">Food (食)</div>
+                    <div class="value">己 (Yin Earth) in Month = Pian Yin (Shadow Resource) — not standard Food. This person has limited conventional creative expression; more intuitive and internal.</div>
+                </div>
+                <div class="analysis-item">
+                    <div class="label">Peer (比/劫)</div>
+                    <div class="value">丁 in Day = Bi (same as Day Master). No Zheng Jie or Bi appearing in other pillars. Self-reliance is high; peer support is limited.</div>
+                </div>
+            </div>
+        </div>
+
+        <p>This chart shows a Fire individual with <strong>strong Wealth (财) energy</strong> — Metal as both stem and branch in the personal pillars. There is a <strong>Zheng Officer</strong> (water, the element that Fire generates) in the Year pillar, suggesting career recognition through established structures. The <strong>absence of a strong Resource (印)</strong> may indicate that formal education plays a lesser role compared to on-the-job learning and self-cultivation. The artistic, creative fire is present in the Day Master itself, and the challenge is channeling that intensity into sustained material achievement without burning out.</p>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section id="conclusion">
+        <h2>07 · Conclusion</h2>
+
+        <div class="conclusion-box">
+            <p>The Ten Gods are not labels — they are relational forces. Each one describes how a particular element behaves toward your Day Master, and by extension, how that energy shows up in your life: the authority figures you attract, the wealth paths available to you, the creative or destructive tendencies you carry, the peers who shape you, and the resources that sustain or challenge you.</p>
+
+            <p>Mastering the Ten Gods is less about memorization and more about developing an intuitive feel for elemental relationships. Once you can see a chart and immediately sense that a Seven Killing Officer is pressing hard against the Day Master, or that a chart is dominated by Wealth energy with little Resource to ground it, you have internalized the language.</p>
+
+            <p>The practical value is this: the Ten Gods reveal where your chart is <strong>strong</strong>, where it is <strong>weak</strong>, and where it is <strong>tense</strong>. A strong Officer structure indicates leadership potential. A weak Resource line suggests the need to seek external knowledge and support. A dominant Wealth energy points to material focus — and the risk of becoming defined by possessions rather than purpose.</p>
+
+            <p>Study the Ten Gods not as separate symbols, but as a living system of relationships. In every BaZi chart, they are already speaking. Your
