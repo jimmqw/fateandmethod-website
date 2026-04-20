@@ -1,4 +1,4 @@
-*.html text encoding=utf-8 working-tree-encoding=utf-8
+*.html text encoding=utf-8
 *.css text encoding=utf-8 working-tree-encoding=utf-8
 *.js text encoding=utf-8 working-tree-encoding=utf-8
 *.md text encoding=utf-8 working-tree-encoding=utf-8
