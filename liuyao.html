@@ -1,58 +1,63 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liu Yao —?Coin Divination from the I Ching | Fate & Method</title>
-    <meta name="description" content="Master Liu Yao (鍏埢), the I Ching-derived coin divination system that uses three coins to generate six lines for answering specific questions with remarkable precision.">
-    <meta property="og:title" content="Liu Yao (Six Lines) —?The Art of Change | Fate & Method">
+    <title>Liu Yao (六爻) — I Ching Coin Divination, The Art of Change | Fate & Method</title>
+    <meta name="description" content="Liu Yao (六爻), I Ching Coin Divination. The art of change through three coins and six lines. Consult the 64 hexagrams for precise answers to any question.">
+    <meta property="og:title" content="Liu Yao — I Ching Coin Divination | Fate & Method">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Liu Yao —?Coin Divination from the I Ching | Fate & Method">
-    <meta name="twitter:description" content="Master Liu Yao (鍏埢), the I Ching-derived coin divination system that uses three coins to generate six lines for answering specific questions with remarkable precision.">
-    <meta property="og:description" content="Master Liu Yao (鍏埢), the I Ching-derived coin divination system that uses three coins to generate six lines for answering specific questions with remarkable precision.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://fateandmethod.com/liuyao.html">
-
     <link rel="canonical" href="https://fateandmethod.com/liuyao.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-        :root{--black:#0a0a0f;--black-soft:#111118;--gold:#c9a84c;--gold-dim:rgba(201,168,76,0.15);--gold-border:rgba(201,168,76,0.25);--cream:#f0ece0;--cream-dim:rgba(240,236,224,0.6);--text:#d4d0c8;--text-muted:#8a8680;--font-heading:'Cormorant Garamond',Georgia,serif;--font-body:'Inter',-apple-system,sans-serif;--sidebar-w:240px}
+        :root{--black:#0a0a0f;--black-soft:#111118;--gold:#c9a84c;--gold-dim:rgba(201,168,76,0.15);--gold-border:rgba(201,168,76,0.25);--cream:#f0ece0;--cream-dim:rgba(240,236,224,0.6);--text:#d4d0c8;--text-muted:#8a8680;--font-heading:'Cormorant Garamond',Georgia,serif;--font-body:'Inter',-apple-system,sans-serif;--sidebar-w:220px}
         html{scroll-behavior:smooth}
         body{background:var(--black);color:var(--text);font-family:var(--font-body);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
         a{color:var(--gold);text-decoration:none;transition:opacity 0.2s}
         a:hover{opacity:0.8}
         nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 60px;background:rgba(10,10,15,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--gold-border)}
         .logo{font-family:var(--font-heading);font-size:1.4rem;font-weight:600;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase}
-        .nav-links{display:flex;gap:36px;list-style:none}
-        .nav-links a{font-size:0.78rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--cream-dim);transition:color 0.2s}
+        .nav-links{display:flex;gap:28px;list-style:none;flex-wrap:wrap}
+        .nav-links a{font-size:0.75rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--cream-dim);transition:color 0.2s}
         .nav-links a:hover,.nav-links a.active{color:var(--gold);opacity:1}
-        .page-hero{padding:160px 60px 80px;max-width:1400px;margin:0 auto}
+        .breadcrumb{padding:120px 60px 0;max-width:1200px;margin:0 auto;font-size:0.78rem;color:var(--text-muted)}
+        .breadcrumb a{color:var(--text-muted)}
+        .breadcrumb a:hover{color:var(--gold);opacity:1}
+        .breadcrumb span{margin:0 8px;color:var(--gold-border)}
+        .page-hero{padding:20px 60px 80px;max-width:1200px;margin:0 auto}
         .page-eyebrow{font-size:0.72rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
-        .page-hero h1{font-family:var(--font-heading);font-size:clamp(2.2rem,4.5vw,3.8rem);font-weight:500;color:var(--cream);line-height:1.15;margin-bottom:20px;max-width:800px}
+        .page-hero h1{font-family:var(--font-heading);font-size:clamp(2.2rem,4.5vw,3.5rem);font-weight:500;color:var(--cream);line-height:1.15;margin-bottom:20px;max-width:800px}
         .page-hero h1 em{font-style:italic;color:var(--gold)}
-        .page-hero-sub{font-size:1rem;color:var(--text-muted);font-weight:300;max-width:580px}
-        .article-layout{display:grid;grid-template-columns:1fr var(--sidebar-w);gap:60px;max-width:1400px;margin:0 auto;padding:0 60px 100px;align-items:start}
+        .page-hero-sub{font-size:1.05rem;color:var(--text-muted);font-weight:300;max-width:580px;line-height:1.7}
+        .article-layout{display:grid;grid-template-columns:1fr var(--sidebar-w);gap:60px;max-width:1200px;margin:0 auto;padding:0 60px 100px;align-items:start}
         .article-content{min-width:0}
+        .article-body{position:relative}
         .article-lead{font-size:1.1rem;color:var(--cream-dim);font-weight:300;margin-bottom:48px;line-height:1.85;border-left:2px solid var(--gold);padding-left:28px}
-        h2{font-family:var(--font-heading);font-size:1.75rem;font-weight:500;color:var(--cream);margin:64px 0 24px;padding-bottom:12px;border-bottom:1px solid var(--gold-border)}
+        h2{font-family:var(--font-heading);font-size:1.75rem;font-weight:500;color:var(--cream);margin:56px 0 24px;padding-bottom:12px;border-bottom:1px solid var(--gold-border)}
         h3{font-family:var(--font-heading);font-size:1.25rem;font-weight:500;color:var(--cream);margin:32px 0 12px}
-        p{margin-bottom:20px;color:var(--text)}
+        p{margin-bottom:20px;color:var(--text);font-size:0.97rem}
         strong{color:var(--cream);font-weight:500}
-        blockquote{border-left:3px solid var(--gold);padding:1rem 1.5rem;margin:2rem 0;background:rgba(201,168,76,0.04);border-radius:0 6px 6px 0}
-        blockquote p{color:var(--cream);font-style:italic;font-size:1.05rem;margin-bottom:0}
-        .getting-started{background:var(--gold-dim);border:1px solid var(--gold-border);border-radius:8px;padding:2rem;margin:2.5rem 0}
-        .getting-started h3{font-family:var(--font-heading);font-size:1.3rem;color:var(--gold);margin-top:0;margin-bottom:0.8rem}
-        .getting-started p{color:var(--cream-dim);margin-bottom:0.8rem}
-        .getting-started ul{list-style:none;padding:0;margin:1rem 0 0}
-        .getting-started li{padding:0.4rem 0;color:var(--text);padding-left:1.5rem;position:relative}
-        .getting-started li::before{content:'鈫?;position:absolute;left:0;color:var(--gold)}
-        .article-cta{margin-top:80px;padding:48px;background:var(--black-soft);border:1px solid var(--gold-border);text-align:center}
+        em{color:var(--gold);font-style:italic}
+        blockquote{border-left:3px solid var(--gold);padding:1.2rem 1.5rem;margin:2.5rem 0;background:rgba(201,168,76,0.04);border-radius:0 6px 6px 0}
+        blockquote p{color:var(--cream);font-style:italic;font-size:1.05rem;margin-bottom:0;line-height:1.8}
+        .getting-started{background:var(--gold-dim);border:1px solid var(--gold-border);border-radius:8px;padding:2rem 2rem 1.5rem;margin:2.5rem 0}
+        .getting-started h3{font-family:var(--font-heading);font-size:1.3rem;color:var(--gold);margin-top:0;margin-bottom:1rem}
+        .getting-started ol{list-style:none;padding:0;margin:0;counter-reset:steps}
+        .getting-started li{padding:0.6rem 0 0.6rem 2.5rem;position:relative;color:var(--text);font-size:0.95rem;counter-increment:steps;border-bottom:1px solid rgba(201,168,76,0.1)}
+        .getting-started li:last-child{border-bottom:none}
+        .getting-started li::before{content:counter(steps);position:absolute;left:0;top:0.7rem;width:1.6rem;height:1.6rem;background:var(--gold);color:var(--black);border-radius:50%;font-size:0.75rem;font-weight:600;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.6rem}
+        .getting-started li strong{color:var(--cream)}
+        .hexagram-row{display:flex;gap:1rem;margin:1.5rem 0;flex-wrap:wrap}
+        .hexagram-card{background:var(--black-soft);border:1px solid var(--gold-border);border-radius:6px;padding:1rem;min-width:120px;text-align:center}
+        .hexagram-card h4{font-family:var(--font-heading);font-size:1.1rem;color:var(--gold);margin-bottom:0.3rem}
+        .hexagram-card p{font-size:0.8rem;color:var(--text-muted);margin-bottom:0}
+        .article-cta{margin-top:80px;padding:48px;background:var(--black-soft);border:1px solid var(--gold-border);text-align:center;border-radius:8px}
         .article-cta h3{font-family:var(--font-heading);font-size:1.5rem;color:var(--cream);margin-bottom:12px;margin-top:0}
         .article-cta p{color:var(--text-muted);font-size:0.9rem;margin-bottom:24px}
-        .btn-primary{display:inline-block;padding:14px 36px;background:var(--gold);color:var(--black);font-size:0.82rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border:none;cursor:pointer;transition:all 0.25s}
+        .btn-primary{display:inline-block;padding:14px 36px;background:var(--gold);color:var(--black);font-size:0.82rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border:none;border-radius:4px;cursor:pointer;transition:all 0.25s}
         .btn-primary:hover{background:#d4b56a;opacity:1;transform:translateY(-1px)}
         .sidebar{position:sticky;top:100px}
         .toc-label{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:16px}
@@ -60,7 +65,7 @@
         .toc-list li{margin-bottom:2px}
         .toc-list a{display:block;font-size:0.82rem;color:var(--text-muted);padding:6px 12px;border-left:2px solid transparent;transition:all 0.2s}
         .toc-list a:hover,.toc-list a.active{color:var(--gold);border-left-color:var(--gold);background:var(--gold-dim);opacity:1}
-        .related-section{padding:60px 60px;max-width:1400px;margin:0 auto}
+        .related-section{padding:60px;max-width:1200px;margin:0 auto}
         .related-section h3{font-family:var(--font-heading);font-size:1.3rem;color:var(--cream);margin-bottom:1.5rem}
         .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem}
         .related-card a{display:block;background:var(--black-soft);border:1px solid var(--gold-border);border-radius:8px;padding:1rem;transition:all 0.25s}
@@ -70,26 +75,10 @@
         .footer-copy{font-size:0.82rem;color:var(--text-muted);font-weight:300}
         .footer-links{display:flex;gap:28px;list-style:none}
         .footer-links a{font-size:0.78rem;color:var(--text-muted);letter-spacing:0.05em}
-        .footer-links a:hover{color:var(--gold);opacity:1}
+        footer a:hover{color:var(--gold);opacity:1}
         @media(max-width:1100px){.article-layout{grid-template-columns:1fr}.sidebar{position:static;display:none}}
-        @media(max-width:768px){nav{padding:16px 24px}.page-hero{padding:120px 24px 60px}.article-layout{padding:0 24px 60px}footer{padding:32px 24px;flex-direction:column;text-align:center}}
-    
-        .comments-section{padding:60px 0 20px;max-width:1400px;margin:0 auto;padding-left:60px;padding-right:60px}
-        .comments-title{font-family:var(--font-heading);font-size:1.3rem;color:var(--cream);margin-bottom:0.5rem}
-        .comments-subtitle{font-size:0.85rem;color:var(--text-muted);margin-bottom:2rem}
-        .comments-section .utterances{max-width:100%}
-
-</style>
-<!-- Baidu Analytics -->
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?7a310f3a5b54d3c8565e5669ffb815a5";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+        @media(max-width:768px){nav{padding:16px 24px}.breadcrumb,.page-hero{padding-left:24px;padding-right:24px}.article-layout{padding:0 24px 60px}footer{padding:32px 24px;flex-direction:column;text-align:center}}
+    </style>
 </head>
 <body>
 
@@ -108,75 +97,108 @@ var _hmt = _hmt || [];
     </ul>
 </nav>
 
+<div class="breadcrumb">
+    <a href="./index.html">All Systems</a><span>/</span>Yi Jing<span>/</span>Liu Yao
+</div>
+
 <header class="page-hero">
-    <div class="page-eyebrow">Actionable &nbsp;/&nbsp; I Ching Divination</div>
-    <h1>Liu Yao <em>(鍏埢)</em><br>Coin Lines of Destiny</h1>
-    <p class="page-hero-sub">Three coins, one question, six lines —?the most direct path to honest answers from the I Ching tradition.</p>
+    <div class="page-eyebrow">Yi Jing &nbsp;/&nbsp; 六爻</div>
+    <h1>Liu Yao <em>(六爻)</em><br>The Art of Change Through Three Coins and Six Lines</h1>
+    <p class="page-hero-sub">Of all the ways to consult the I Ching, Liu Yao is the most precise. Three coins. Six throws. Sixty-four hexagrams. One honest answer.</p>
 </header>
 
 <div class="article-layout">
     <main class="article-content">
+        <div class="article-body">
 
-        <p class="article-lead">
-            There is a moment everyone knows: you flip a coin, and before it even lands, you already know what you hoped for. Liu Yao (鍏埢) takes that split-second of hoping and grows it into a precise, elegant system —?three coins tossed to generate six lines, each reading a snapshot of the energetic reality right now, answering your specific question with a directness that still astonishes after centuries.
-        </p>
+            <p class="article-lead">
+                The <strong>Yi Jing</strong> (易经 — Book of Changes) is China's oldest and most revered divination text, a work of such depth and subtlety that Confucius himself is said to have spent years studying it. Among the several methods for consulting the Yi Jing, <strong>Liu Yao</strong> (六爻 — "Six Lines") is among the most direct, the most structured, and — for those who master it — the most revealing. Where other systems like Mei Hua Yi Shu draw inspiration from the moment spontaneously, Liu Yao imposes a rigorous six-step ritual that generates its answer through the interaction of coin tosses with the five elements. The result is a precise, layered reading that can address almost any question with remarkable specificity.
+            </p>
 
-        <h2 id="what-is-liu-yao">What Is Liu Yao?</h2>
-        <p>Liu Yao —?literally "Six Lines" —?is a coin divination system that uses three coins tossed simultaneously to generate a hexagram, which then becomes the foundation for deep interpretation. Where the traditional I Ching requires casting yarrow stalks or coins to produce a hexagram and then consulting oracles, Liu Yao streamlines and intensifies the process: three coins, one question, six lines —?and the answer begins to take shape.</p>
-        <p>Each toss of the three coins produces a single line, either yang (solid, active) or yin (broken, receptive). Six tosses give you six lines, stacking from bottom to top to form a complete hexagram. This is your primary hexagram —?the main answer. But Liu Yao goes further: each of the six lines is then analyzed for its "stage of transformation," determining whether it is in a stable, waxing, or waning state, which dramatically deepens the reading.</p>
-        <blockquote><p>"The I Ching asks you to contemplate. Liu Yao asks you to choose a question and commit to it —?and then it answers with an honesty that can be uncomfortable, but never less than truthful."</p></blockquote>
-        <p>The resulting reading is a richly layered document. It names the primary hexagram (connecting your question to thousands of years of symbolic interpretation) and its companion hexagram (the one it transforms into when its changing lines complete their shift). It identifies the five elements (wood, fire, earth, metal, water) operating in the chart, and it maps these forces onto the specific circumstances of your question.</p>
+            <h2 id="what-is-liuyao">What Is Liu Yao?</h2>
+            <p>Liu Yao is a <em>coin-based</em> Yi Jing divination system in which the seeker throws three coins six times to generate a single hexagram. Each throw produces one of the I Ching's sixty-four hexagrams, composed of six lines — each line either <em>yang</em> (solid, unbroken) or <em>yin</em> (broken). The sequence of six throws creates a complete hexagram that represents the energetic situation at the time of the question.</p>
+            <p>What distinguishes Liu Yao from other Yi Jing methods — and from the traditional yarrow stalk method — is the role of the five elements in interpretation. In Liu Yao, each of the six lines is assigned to one of the five elements based on the coin result, and this elemental assignment adds a layer of dynamic analysis to the otherwise static hexagram structure. A yang line generated by three heads (coin yang) carries a different elemental signature than a yang line generated by two heads and one tail — even though both are yang lines. This <em>hidden element</em> (暗动) is central to how Liu Yao extracts timing, intensity, and relational nuance from the reading.</p>
 
-        <h2 id="history-from-imperial-archive-to-the-peoples-oracle">History: From Imperial Archive to the People's Oracle</h2>
-        <p>The I Ching itself dates to at least the Western Zhou period (1046—?71 BCE), making it one of the oldest continuous texts in human history. Its sixty-four hexagrams were originally used for state divination —?military decisions, agricultural planning, imperial succession. The Ten Wings, a series of commentaries added during the Warring States and Han periods, transformed the I Ching from a practical oracle into a philosophical masterpiece that influenced Confucianism, Taoism, and the entire intellectual fabric of Chinese civilization.</p>
-        <p>Liu Yao emerged as a specialized branch of this tradition, likely during the Song Dynasty (960—?279 CE), when scholars began systematically applying the I Ching's principles to the specific problem of answering singular, defined questions. Rather than the broad, open-ended inquiry the I Ching encouraged, Liu Yao was built for precision: one querent, one question, one honest answer.</p>
-        <p>Over the following centuries, Liu Yao developed its own sophisticated theoretical framework. Master practitioners established elaborate rules for interpreting the relationships between lines —?which lines "support" each other, which "conflict," which are "empty" (meaning temporarily inactive), which are "seasonal" (activated by time). The system became increasingly refined, eventually forming its own complete methodology independent of, yet rooted in, the I Ching's ancient wisdom.</p>
-        <blockquote><p>"A Liu Yao reading is a conversation with the cosmos. The hexagram you cast is not a verdict from outside —?it is your own energetic situation at that precise moment, reflected back with perfect clarity."</p></blockquote>
-
-        <h2 id="how-it-works-three-coins-six-lines-one-answer">How It Works: Three Coins, Six Lines, One Answer</h2>
-        <p>The mechanics are beautifully simple. You hold three coins —?traditionally Chinese cash coins with square holes, though any three identical coins will do —?and you formulate your question in your mind with genuine focus and intention. Then you toss them six times. Each toss is recorded: heads usually counts as 3, tails as 2, and the total sum determines whether that line is yang or yin.</p>
-        <p>What emerges is a hexagram. But this is not where the reading ends —?it is where it begins. A skilled Liu Yao practitioner will then analyze the "five elements" relationship between the hexagram's component lines, identify which lines are "moving" (changing), and read the interactions between the upper and lower trigrams that compose the hexagram. These layers interweave to form a picture of extraordinary specificity.</p>
-        <p>The system also incorporates "official" positions —?the "ancestor," the "wealth," the "璋婦" (career/official), the "鍏勫紵" (siblings/competitors), and the "濡昏储" (spouse/wealth) —?which give the reading its practical, grounded character. This is not abstract philosophy. It is a working map of your question's terrain, naming the forces at play and indicating what is favorable, what is hostile, and what is simply neutral background noise.</p>
-
-        <h2 id="what-makes-liu-yao-remarkable">What Makes Liu Yao Remarkable</h2>
-        <p>Unlike systems that describe a lifetime or a personality, Liu Yao is a snapshot —?a laser-focused reading of one question at one moment in time. And because it captures the energetic reality of the moment you asked, it is extraordinarily responsive to context. Ask the same question today and in three days, and you may receive different answers —?because you and your situation have subtly shifted in the interim.</p>
-        <p>This is what gives Liu Yao its reputation for uncanny accuracy. The hexagram does not predict the future so much as it reflects the present with such depth that the future course of action becomes clear. It shows you the landscape you are standing in, the allies and obstacles around you, and the direction the energy is already flowing.</p>
-        <blockquote><p>"Liu Yao does not tell you what will happen. It tells you what is already happening —?and from that knowing, the wise person chooses their next step with far greater clarity than they ever could have without it."</p></blockquote>
-        <p>The system is also notably honest. A skilled Liu Yao reader will not tell you what you want to hear. If your question concerns a venture that is energetically unfavorable, the reading will say so —?and will often indicate the timing when conditions may improve, or the specific adjustments in approach that could shift the energy in your favor.</p>
-
-        <h2 id="why-you-should-learn-liu-yao">Why You Should Learn Liu Yao</h2>
-        <p>If you have ever faced a decision and wished for clear guidance —?not vague advice, but specific, actionable insight —?Liu Yao is the system designed precisely for that need. It is the most practical of the I Ching traditions, stripped of ceremonial complexity, focused entirely on answering the question you actually came with.</p>
-        <p>Learning Liu Yao also deepens your understanding of the I Ching itself. Because Liu Yao derives from the same hexagram system, studying it illuminates the deeper structure of all Chinese divination —?the way yin and yang interact, the five elements constrain and generate each other, and time itself is not a straight line but a cyclical pattern of waxing and waning energy.</p>
-
-        <div class="getting-started">
-            <h3>Getting Started with Liu Yao</h3>
-            <p>Begin your journey into coin divination with these foundational steps:</p>
-            <ul>
-                <li><strong>Get three coins</strong> —?Traditional Chinese cash coins are ideal, but any three identical coins will work. Hold them with respect; they are your divination instruments.</li>
-                <li><strong>Learn the binary logic</strong> —?Understand yin and yang, and how three coins generate the four possible line types (old yin, old yang, young yin, young yang). This is the alphabet of the system.</li>
-                <li><strong>Study the ten primary hexagrams</strong> —?Not all 64 hexagrams appear equally in Liu Yao practice. The ten most common ones carry enormous interpretive weight. Master these first.</li>
-                <li><strong>Practice asking questions</strong> —?Liu Yao demands clarity. Vague questions yield vague answers. Practice formulating single, specific, honest questions.</li>
-                <li><strong>Keep a reading journal</strong> —?Record every reading, every question, every answer. Over time, you will discover patterns in how the system responds to your particular life situations.</li>
-                <li><strong>Seek a teacher</strong> —?The interpretive layers of Liu Yao are deep. A qualified teacher can help you navigate the system's subtleties and avoid common misreadings.</li>
+            <h2 id="three-coins-six-lines">How Three Coins Generate Six Lines</h2>
+            <p>The mechanics of Liu Yao are elegant in their simplicity. Three coins are held in the hand, the question is consciously focused, and the coins are thrown. Each throw is recorded as one line, from bottom to top — building the hexagram from its foundation upward.</p>
+            <p>The result of each throw is determined by counting the number of heads:</p>
+            <ul style="margin-bottom:20px;color:var(--text);font-size:0.97rem;padding-left:1.5rem">
+                <li><strong>3 heads</strong> — Old Yang (老阳) — a <em>yang</em> line that is <em>moving</em> (will transform into yin)</li>
+                <li><strong>2 heads + 1 tail</strong> — Young Yang (少阳) — a stable <em>yang</em> line</li>
+                <li><strong>2 tails + 1 head</strong> — Young Yin (少阴) — a stable <em>yin</em> line</li>
+                <li><strong>3 tails</strong> — Old Yin (老阴) — a <em>yin</em> line that is <em>moving</em> (will transform into yang)</li>
             </ul>
-        </div>
+            <p>The old yang and old yin lines are called <em>moving lines</em> (动爻) — they carry special significance because they indicate active transformation within the hexagram. When a moving line transforms, it changes the hexagram itself, creating a <em>transformed hexagram</em> that represents where the situation is heading, not just where it is now. This is how Liu Yao incorporates the dimension of time and change into what would otherwise be a static reading.</p>
 
-        <div class="article-cta">
-            <h3>Liu Yao Coin Divination Guide Available</h3>
-            <p>Practice Liu Yao with our comprehensive guides. Three coins and one clear question —?discover what the I Ching tradition says.</p>
-            <a href="./index.html" class="btn-primary">Explore All Systems</a>
-        </div>
+            <h2 id="64-hexagrams">The 64 Hexagrams in Liu Yao</h2>
+            <p>The sixty-four hexagrams of the Yi Jing are arranged in a sequence that reflects the fundamental logic of change itself. Each hexagram is composed of two <em>trigrams</em> (八卦) — one above, one below — and each trigram carries both an elemental nature and a set of symbolic associations that color the meaning of the hexagram.</p>
+            <div class="hexagram-row">
+                <div class="hexagram-card"><h4>Qian ☰</h4><p>Heaven — Pure Yang, Creativity, Strength</p></div>
+                <div class="hexagram-card"><h4>Kun ☷</h4><p>Earth — Pure Yin, Receptivity, Nourishment</p></div>
+                <div class="hexagram-card"><h4>Zhen ☳</h4><p>Thunder — Movement, Initiative, Arousal</p></div>
+                <div class="hexagram-card"><h4>Xun ☴</h4><p>Wind — Penetration, Gentleness, Distribution</p></div>
+                <div class="hexagram-card"><h4>Kan ☵</h4><p>Water — Danger, Abyss, Intelligence</p></div>
+                <div class="hexagram-card"><h4>Li ☲</h4><p>Fire — Clarity, Adorning,依附</p></div>
+                <div class="hexagram-card"><h4>Gen ☶</h4><p>Mountain — Stillness, Rest, Steadfastness</p></div>
+                <div class="hexagram-card"><h4>Dui ☱</h4><p>Lake — Joy, Satisfaction, Celebration</p></div>
+            </div>
+            <p>The meaning of any hexagram emerges from the interaction between its upper and lower trigram, modified by which specific lines are moving. The hexagram <em>Qian</em> (全部六条阳爻) represents pure creative force; the hexagram <em>Kun</em> (全部六条阴爻) represents pure receptivity. Between these two poles lie sixty-two hexagrams of infinite subtlety — each one a distinct configuration of cosmic forces that maps precisely onto some aspect of the human situation.</p>
 
+            <h2 id="five-elements">The Five Elements in Each Line</h2>
+            <p>What makes Liu Yao distinctively powerful among Yi Jing methods is its incorporation of the <strong>Five Elements</strong> (五行) into each line reading. Each coin result carries an elemental assignment based on the interaction between the throw result and the day stem of the reading. These elemental assignments create a secondary layer of interpretation that adds relational dynamics to the structural analysis.</p>
+            <p>When an element in one line <em>generates</em> (生) the element in an adjacent line, the relationship is supportive — energy flows between them. When one element <em>overcomes</em> (克) another, tension is created. Moving lines introduce further complexity: when an old yang line transforms, it generates a new elemental assignment that changes the relational dynamics of the entire hexagram.</p>
+            <p>Mastering the Five Elements in Liu Yao is what separates a basic hexagram reading from a sophisticated one. It allows the practitioner to identify not just the general situation described by the hexagram, but the specific energetic texture of that situation — where energy is building, where it is blocked, where it is in danger of collapsing.</p>
+
+            <blockquote>
+                <p>"A hexagram without the Five Elements is a map without terrain. It shows you where you are, but not what the ground beneath you is made of, or whether the path ahead is river or mountain. Liu Yao adds the terrain."</p>
+            </blockquote>
+
+            <h2 id="reading-dynamic">Reading the Dynamic: Moving Lines and the Transformed Hexagram</h2>
+            <p>The presence of one or more moving lines in a Liu Yao reading is what gives the chart its <em>dynamic quality</em> — the sense of a situation in motion rather than at rest. A hexagram with no moving lines describes a stable situation, one that is unlikely to change without significant external intervention. A hexagram with one moving line indicates a focused point of change that will drive the situation's evolution. Two or more moving lines create a more complex picture of simultaneous transformation in multiple areas.</p>
+            <p>The moving lines also determine the <em>timing</em> of developments. In Liu Yao tradition, the relative position of the moving lines within the hexagram — from first line at the bottom to sixth line at the top — provides clues about when changes will manifest. Lower moving lines tend to indicate near-term developments; higher moving lines point toward later stages of the situation's evolution.</p>
+            <p>The <em>transformed hexagram</em> — the new hexagram created when all moving lines have completed their transformation — represents the destination of the current trajectory. Reading both the original and the transformed hexagram simultaneously is what allows Liu Yao to describe both the present moment and where it is heading.</p>
+
+            <h2 id="eight-trigrams">Eight Trigrams as Building Blocks</h2>
+            <p>The eight trigrams (八卦) are the foundational vocabulary of the Yi Jing — eight three-line figures that represent the eight fundamental energies of the cosmos. They are the building blocks from which the sixty-four hexagrams are constructed, and understanding them is essential to reading Liu Yao with depth.</p>
+            <p>Each trigram has a primary element, a primary direction, a primary family member, and a primary body part. <em>Zhen</em> (Zhen, Thunder) is the eldest son; <em>Xun</em> (Wind) is the eldest daughter. <em>Qian</em> (Heaven) is the father; <em>Kun</em> (Earth) is the mother. When a trigram appears in a specific position within a hexagram — upper or lower, active or passive — its family role colors the interpretation. A question about a business partnership might be read through the lens of the father trigram (authority, structure) or the youngest son trigram (rebellion, movement), depending on where it appears in the chart.</p>
+
+            <h2 id="your-question">Your Question as the Anchor</h2>
+            <p>In Liu Yao, the question is not incidental — it is the <em>anchor</em> around which the entire reading is organized. Every hexagram can be interpreted in many ways, and it is the specificity of the question that directs the practitioner toward the relevant layer of meaning. A question about whether to accept a job offer activates different palace meanings and different line interpretations than a question about whether the same offer will lead to financial security.</p>
+            <p>The most important quality of a Liu Yao question is <em>focus</em>. A vague question — "what does my future look like?" — produces a vague answer. A specific question — "should I accept the role as regional director by the end of this month?" — produces a precise and useful answer. The more specific the question, the more specific the response the system is capable of delivering.</p>
+
+            <h2 id="getting-started">Getting Started with Three Coins</h2>
+            <div class="getting-started">
+                <h3>Begin Your Journey into Coin Divination</h3>
+                <ol>
+                    <li><strong>Hold three coins with clear intention</strong> — Any coins of equal denomination will work. Hold them in your cupped hands, focus on your question, and shake them gently. The quality of your focus is the quality of your reading.</li>
+                    <li><strong>Throw and record six times</strong> — Each throw produces one line, recorded from bottom to top. Count heads: 3 heads = old yang (moving), 2 heads + 1 tail = young yang (stable), 2 tails + 1 head = young yin (stable), 3 tails = old yin (moving). Draw each line as solid for yang, broken for yin, marking moving lines clearly.</li>
+                    <li><strong>Identify the hexagram</strong> — Match your six-line figure to one of the sixty-four hexagrams. The <em>Yi Jing</em> text for that hexagram is your primary interpretive foundation. Pay most attention to the moving lines' passages.</li>
+                    <li><strong>Apply the Five Elements to each line</strong> — Determine the elemental assignment of each line based on the throw result and the day stem. Map the generating and overcoming relationships between adjacent lines.</li>
+                    <li><strong>Read the transformed hexagram</strong> — Change all moving lines to their opposite (yang becomes yin, yin becomes yang) and read the resulting hexagram as the destination of the current trajectory.</li>
+                    <li><strong>Anchor the reading to your question</strong> — The hexagram means many things. Your question tells you which meaning is relevant right now. Return to the question again and again as you interpret.</li>
+                </ol>
+            </div>
+
+            <div class="article-cta">
+                <h3>Continue Your Exploration</h3>
+                <p>Mei Hua Yi Shu draws from the same Yi Jing tradition but applies it spontaneously to any moment or number. Explore how the two systems relate and differ.</p>
+                <a href="./meihua.html" class="btn-primary">Explore Mei Hua Yi Shu</a>
+            </div>
+
+        </div>
     </main>
 
     <aside class="sidebar">
         <div class="toc-label">In This Article</div>
         <ul class="toc-list">
-            <li><a href="#what-is-liu-yao">What Is Liu Yao?</a></li>
-            <li><a href="#history-from-imperial-archive-to-the-peoples-oracle">History: From Imperial Archive to the People's Oracle</a></li>
-            <li><a href="#how-it-works-three-coins-six-lines-one-answer">How It Works: Three Coins, Six Lines, One Answer</a></li>
-            <li><a href="#what-makes-liu-yao-remarkable">What Makes Liu Yao Remarkable</a></li>
-            <li><a href="#why-you-should-learn-liu-yao">Why You Should Learn Liu Yao</a></li>
+            <li><a href="#what-is-liuyao">What Is Liu Yao?</a></li>
+            <li><a href="#three-coins-six-lines">Three Coins &amp; Six Lines</a></li>
+            <li><a href="#64-hexagrams">The 64 Hexagrams</a></li>
+            <li><a href="#five-elements">Five Elements in Each Line</a></li>
+            <li><a href="#reading-dynamic">Reading the Dynamic</a></li>
+            <li><a href="#eight-trigrams">Eight Trigrams</a></li>
+            <li><a href="#your-question">Your Question as Anchor</a></li>
+            <li><a href="#getting-started">Getting Started</a></li>
         </ul>
     </aside>
 </div>
@@ -184,39 +206,36 @@ var _hmt = _hmt || [];
 <section class="related-section">
     <h3>Explore Other Systems</h3>
     <div class="related-grid">
-        <div class="related-card"><a href="./ziwei.html">Zi Wei Dou Shu <span>绱井鏂楁暟 路 Astrology</span></a></div>
-        <div class="related-card"><a href="./meihua.html">Mei Hua Yi Shu <span>姊呰姳鏄撴暟 路 Spontaneous</span></a></div>
-        <div class="related-card"><a href="./bazi.html">Ba Zi <span>鍥涙煴鍏瓧 路 Birth Destiny</span></a></div>
-        <div class="related-card"><a href="./daliuren.html">Da Liu Ren <span>澶у叚澹?路 The Three Greats</span></a></div>
-        <div class="related-card"><a href="./xuankong.html">Xuan Kong <span>濂囬棬閬佺敳 路 Strategic Timing</span></a></div>
-        <div class="related-card"><a href="./taiyi.html">Tai Yi Shen Shu <span>澶箼绁炴暟 路 Cosmic Cycles</span></a></div>
-        <div class="related-card"><a href="./xiaoliuren.html">Xiao Liu Ren <span>灏忓叚澹?路 Quick Answers</span></a></div>
-        <div class="related-card"><a href="./daily-wisdom.html">Daily Wisdom <span>鐢熸椿濡欐嫑 路 Practical Tips</span></a></div>
+        <div class="related-card"><a href="./meihua.html">Mei Hua Yi Shu <span>梅花易数 — Spontaneous</span></a></div>
+        <div class="related-card"><a href="./daliuren.html">Da Liu Ren <span>大六壬 — Imperial System</span></a></div>
+        <div class="related-card"><a href="./bazi.html">Ba Zi <span>四柱八字 — Birth Destiny</span></a></div>
+        <div class="related-card"><a href="./ziwei.html">Zi Wei Dou Shu <span>紫微斗数 — Astrology</span></a></div>
+        <div class="related-card"><a href="./xuankong.html">Xuan Kong <span>玄空风水 — Flying Stars</span></a></div>
+        <div class="related-card"><a href="./taiyi.html">Tai Yi Shen Shu <span>太乙神数 — Cosmic Cycles</span></a></div>
     </div>
 </section>
-    <section class="comments-section">
-        <h3 class="comments-title">Reader Discussion</h3>
-        <p class="comments-subtitle">Share your thoughts, questions, or suggestions for this system</p>
-        <script src="https://utteranc.es/client.js"
-            repo="jimmqw/fateandmethod-website"
-            issue-term="pathname"
-            label="comment"
-            theme="github-dark"
-            crossorigin="anonymous"
-            async>
-        </script>
-    </section>
 
-
+<section style="padding:60px;max-width:1200px;margin:0 auto">
+    <h3 style="font-family:var(--font-heading);font-size:1.3rem;color:var(--cream);margin-bottom:1rem">Reader Discussion</h3>
+    <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1.5rem">Share your thoughts or questions about Liu Yao</p>
+    <script src="https://utteranc.es/client.js" repo="jimmqw/fateandmethod-website" issue-term="pathname" label="comment" theme="github-dark" crossorigin="anonymous" async></script>
+</section>
 
 <footer>
-    <p class="footer-copy">漏 2026 FateAndMethod.com —?Bringing Chinese Metaphysics to the World</p>
+    <p class="footer-copy">© 2026 FateAndMethod.com — Bringing Chinese Metaphysics to the World</p>
     <ul class="footer-links">
-        <li><a href="./ziwei.html">Zi Wei</a></li>
-        <li><a href="./liuyao.html">Liu Yao</a></li>
+        <li><a href="./meihua.html">Mei Hua</a></li>
+        <li><a href="./daliuren.html">Da Liu Ren</a></li>
         <li><a href="./index.html">All Systems</a></li>
     </ul>
 </footer>
+
+
+<section style="padding:60px;max-width:1200px;margin:0 auto">
+    <h3 style="font-family:var(--font-heading);font-size:1.3rem;color:var(--cream);margin-bottom:1rem">Reader Discussion</h3>
+    <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1.5rem">Share your thoughts or questions about this system</p>
+    <script src="https://utteranc.es/client.js" repo="jimmqw/fateandmethod-website" issue-term="pathname" label="comment" theme="github-dark" crossorigin="anonymous" async></script>
+</section>
 
 </body>
 </html>

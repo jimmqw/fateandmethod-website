@@ -77,6 +77,12 @@
         .footer-links a:hover{color:var(--gold);opacity:1}
         @media(max-width:1100px){.article-layout{grid-template-columns:1fr}.sidebar{position:static;display:none}}
         @media(max-width:768px){nav{padding:16px 24px}.page-hero{padding:120px 24px 60px}.article-layout{padding:0 24px 60px}footer{padding:32px 24px;flex-direction:column;text-align:center}}
+        .breadcrumb-wrap{padding:0 60px;max-width:1400px;margin:0 auto}
+        .breadcrumb{font-size:0.75rem;color:var(--text-muted);padding:20px 0 0;display:flex;align-items:center;gap:8px}
+        .breadcrumb a{color:var(--gold);font-weight:500}
+        .breadcrumb span{color:var(--text-muted)}
+        .breadcrumb .sep{opacity:0.4}
+        @media(max-width:768px){.breadcrumb-wrap{padding:0 24px}}
     </style>
 </head>
 <body>
@@ -94,6 +100,7 @@
         <li><a href="./daily-wisdom.html">Daily Wisdom</a></li>
     </ul>
 </nav>
+<div class="breadcrumb-wrap"><nav class="breadcrumb"><a href="./index.html">Home</a><span class="sep">/</span><a href="./ziwei.html">Zi Wei Dou Shu</a><span class="sep">/</span><span>The 12 Palaces</span></nav></div>
 <header class="page-hero">
     <div class="page-eyebrow">Zi Wei Dou Shu &nbsp;/&nbsp; The 12 Palaces</div>
     <h1>The 12 Palaces <em>(鍗佷簩瀹?</em></h1>
@@ -101,6 +108,7 @@
 </header>
 <div class="article-layout">
     <main class="article-content">
+    <div class="article-body">
         <p class="article-lead">
             In Zi Wei Dou Shu, the chart is divided into twelve sections called palaces (瀹?. Each palace governs a specific life domain - personality, relationships, career, wealth, health, travel, subordinates, official career, property, happiness, and parents. The placement of stars within each palace, and the relationships between palaces, are what create the chart's richness. Understanding the twelve palaces is the essential framework for reading any Zi Wei Dou Shu chart.
         </p>
@@ -201,6 +209,7 @@
             <p>The 12 palaces are the stage. The 14 stars are the actors. But what happens when the actors share the stage together?</p>
             <a href="./ziwei-combinations.html" class="btn-primary">Learn Star Combinations</a>
         </div>
+        </div>
     </main>
     <aside class="sidebar">
         <div class="toc-label">In This Article</div>
@@ -266,5 +275,12 @@
         <li><a href="./index.html">All Systems</a></li>
     </ul>
 </footer>
+
+<section style="padding:60px;max-width:1200px;margin:0 auto">
+    <h3 style="font-family:var(--font-heading);font-size:1.3rem;color:var(--cream);margin-bottom:1rem">Reader Discussion</h3>
+    <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1.5rem">Share your thoughts or questions about this system</p>
+    <script src="https://utteranc.es/client.js" repo="jimmqw/fateandmethod-website" issue-term="pathname" label="comment" theme="github-dark" crossorigin="anonymous" async></script>
+</section>
+
 </body>
 </html>
