@@ -40,6 +40,8 @@
         .featured-article p{color:var(--text-muted);font-size:1rem;line-height:1.8;margin-bottom:24px;max-width:680px}
         .featured-article .btn{display:inline-block;padding:14px 36px;background:var(--gold);color:var(--black);font-size:0.82rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border:none;border-radius:4px;transition:all 0.25s}
         .featured-article .btn:hover{background:#d4b56a;opacity:1;transform:translateY(-1px)}
+        .article-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;margin-bottom:60px}
+        .article-grid .featured-article{margin-bottom:0}
         .systems-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
         .system-card{background:var(--black-soft);border:1px solid var(--gold-border);border-radius:10px;padding:24px;transition:all 0.25s}
         .system-card:hover{border-color:rgba(201,168,76,0.5);transform:translateY(-2px)}
@@ -83,12 +85,20 @@
 </header>
 
 <div class="hub-section">
-    <h2>Read the Main Article</h2>
-    <div class="featured-article">
-        <div class="label">Main Article</div>
-        <h3>六爻 - I Ching Coin Divination</h3>
-        <p>This article covers everything you need to know about Liu Yao - its history, principles, and practical applications, explained clearly for the modern reader.</p>
-        <a href="./liuyao.html" class="btn">Read the Article</a>
+    <h2>Liu Yao Articles</h2>
+    <div class="article-grid">
+        <div class="featured-article">
+            <div class="label">Overview</div>
+            <h3>六爻 - I Ching Coin Divination</h3>
+            <p>Everything you need to know about Liu Yao - its history, principles, and practical applications, explained clearly for the modern reader.</p>
+            <a href="./liuyao.html" class="btn">Read the Article</a>
+        </div>
+        <div class="featured-article">
+            <div class="label">Beginner's Guide</div>
+            <h3>How to Cast and Read I Ching Coins</h3>
+            <p>Step-by-step beginner's guide: choose coins, cast six lines, build hexagrams, identify Self and Other lines, and interpret changing lines for real answers.</p>
+            <a href="./liuyao-beginners-guide.html" class="btn">Read the Guide</a>
+        </div>
     </div>
 
     <h2>Explore Other Systems</h2>
